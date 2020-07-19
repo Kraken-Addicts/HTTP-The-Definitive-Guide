@@ -1,4 +1,4 @@
-## 01장 HTTP 개관　　_:octopus: 7/21 화_
+## 01장 HTTP 개관
 - __1.1__ 　 HTTP: 인터넷의 멀티미디어 배달부　 `mihykim`
 - __1.2__ 　 웹 클라이언트와 서버　 `mihykim`
 - __1.3__ 　 리소스　 `mihykim`
@@ -11,7 +11,7 @@
 - __1.10__ 　추가 정보　 `taelee`
 <br>
 
-## 02장 URL과 리소스　　_:octopus: 7/23 목_
+## 02장 URL과 리소스
 - __2.1__ 　 인터넷의 리소스 탐색하기　 `jehong`
 - __2.2__ 　 URL 문법　 `mihykim`
 - __2.3__ 　 단축 URL　 `daelee`
