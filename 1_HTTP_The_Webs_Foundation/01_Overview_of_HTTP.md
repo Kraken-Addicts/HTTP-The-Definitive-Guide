@@ -1,28 +1,15 @@
 ## 01장 :octopus: HTTP 개관
-<br>
 
-### Table of Contents
-
-[1.1 　 HTTP: 인터넷의 멀티미디어 배달부](#11--http-인터넷의-멀티미디어-배달부-mihykim)
-
-[1.2 　 웹 클라이언트와 서버](#12--웹-클라이언트와-서버-mihykim)
-
-[1.3 　 리소스](#13--리소스-mihykim)
-
-[1.4 　 트랜잭션](#14--트랜잭션-daelee)
-
-[1.5 　 메시지](#15--메시지-daelee)
-
-[1.6 　 TCP 커넥션](#16--tcp-커넥션-secho)
-
-[1.7 　 프로토콜 버전](#17--프로토콜-버전-jehong)
-
-[1.8 　 웹의 구성요소](#18--웹의-구성요소-jehong)
-
-[1.9 　 시작의 끝](#19--시작의-끝-jehong)
-
-[1.10 　추가 정보](#110--추가-정보-taelee)
- 
+[1.1 　 HTTP: 인터넷의 멀티미디어 배달부](#11--http-인터넷의-멀티미디어-배달부-mihykim)<br>
+[1.2 　 웹 클라이언트와 서버](#12--웹-클라이언트와-서버-mihykim)<br>
+[1.3 　 리소스](#13--리소스-mihykim)<br>
+[1.4 　 트랜잭션](#14--트랜잭션-daelee)<br>
+[1.5 　 메시지](#15--메시지-daelee)<br>
+[1.6 　 TCP 커넥션](#16--tcp-커넥션-secho)<br>
+[1.7 　 프로토콜 버전](#17--프로토콜-버전-jehong)<br>
+[1.8 　 웹의 구성요소](#18--웹의-구성요소-jehong)<br>
+[1.9 　 시작의 끝](#19--시작의-끝-jehong)<br>
+[1.10 　추가 정보](#110--추가-정보-taelee)<br>
 <br>
 
 ### 1.1 　 HTTP: 인터넷의 멀티미디어 배달부 　`mihykim`
@@ -238,9 +225,8 @@ http://www.yebalja.com/index.html
 <br>
 
 ### 1.10 　 추가 정보 　`taelee`
-1. 자유롭게
-1. 내용 작성
-1. 해주세욘
+- 텔넷 유틸리티<p><img src="https://user-images.githubusercontent.com/60066472/88008345-0bd95680-cb4b-11ea-8cf7-ae3c09541f12.jpg" width="600"></p>
+- 개발자도구에서 리퀘스트 리스폰스 확인하기<p><img src="https://user-images.githubusercontent.com/60066472/88008453-43480300-cb4b-11ea-8d3d-a845849274c2.png" width="600"></p>
 <br>
 
 [위로](#01장-octopus-http-개관)
