@@ -14,13 +14,12 @@
 <br>
 
 ## [02장](./02_URLs_and_Resources.md) :octopus: URL과 리소스
-- __2.1__ 　 인터넷의 리소스 탐색하기　 `jehong`
-- __2.2__ 　 URL 문법　 `mihykim`
-- __2.3__ 　 단축 URL　 `daelee`
-- __2.4__ 　 안전하지 않은 문자　 `daelee`
-- __2.5__ 　 스킴의 바다　 `taelee`
-- __2.6__ 　 미래　 `taelee`
-- __2.7__ 　 추가 정보　 `taelee`
+- __2.1__ 　 인터넷의 리소스 탐색하기　 `yeosong`
+- __2.2__ 　 URL 문법　 `hylee`
+- __2.3__ 　 단축 URL　 `yeha`
+- __2.4__ 　 안전하지 않은 문자　 `kukim`
+- __2.5__ 　 스킴의 바다　 `junslee`
+- __2.6__ 　 미래　 `junslee`
 <br>
 
 ## [03장](./03_HTTP_Messages.md) :octopus: HTTP 메시지
