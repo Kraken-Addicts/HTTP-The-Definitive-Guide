@@ -1,6 +1,7 @@
 # :octopus:HTTP 완벽 가이드
 - __시간:__ 매주 화목 오전 10시 _(7/21~)_
 - __장소:__ 1층 경복궁
+- __순서:__ ①mihykim ②daelee ③secho ④jehong ⑤taelee ⑥yeosong ⑦hylee ⑧yeha ⑨kukim ⑩junslee
   | 　 | 　 | 　스터디 날짜　 | 　비고　 |
   |:---|:---|:---:|:---|
   | [__I. HTTP: 웹의 기초__](https://github.com/Kraken-Addicts/HTTP-The-Definitive-Guide/tree/master/1_HTTP_The_Webs_Foundation) | 　 | 　 | 　 |
