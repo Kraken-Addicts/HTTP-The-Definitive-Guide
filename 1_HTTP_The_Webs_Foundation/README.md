@@ -1,4 +1,4 @@
-# I. HTTP: 웹의 기초
+# 1부 HTTP: 웹의 기초
 
 ## [01장](./01_Overview_of_HTTP.md) :octopus: HTTP 개관
 - __1.1__ 　 HTTP: 인터넷의 멀티미디어 배달부　 `mihykim`
