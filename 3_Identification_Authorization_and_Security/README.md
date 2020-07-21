@@ -1,18 +1,5 @@
 # 3부 HTTP 아키텍처
 
-## [05장](./05_Web_Servers.md) :octopus: 웹 서버
-- __5.1__ 　  다채로운 웹 서버　 `junslee`
-- __5.2__ 　  간단한 펄 웹 서버　 `junslee`
-- __5.3__ 　  진짜 웹 서버가 하는 일　 `mihykim`
-- __5.4__ 　  단계 1: 클라이언트 커넥션 수락　 `mihykim`
-- __5.5__ 　  단계 2: 요청 메시지 수신　 `mihykim`
-- __5.6__ 　  단계 3: 요청 처리　 `daelee`
-- __5.7__ 　  단계 4: 리소스의 매핑과 접근　 `daelee`
-- __5.8__ 　  단계 5: 응답 만들기　 `secho`
-- __5.9__ 　  단계 6: 응답 보내기　 `secho`
-- __5.10__ 　 단계 7: 로깅　 `secho`
-<br>
-
 ## [11장](./11_Client_Identification_and_Cookies.md) 클라이언트 식별과 쿠키
 - __11.1__ 　 개별 접촉　 `hylee`
 - __11.2__ 　 HTTP 헤더　 `hylee`
