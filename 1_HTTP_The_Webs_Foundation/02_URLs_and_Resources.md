@@ -28,7 +28,7 @@
 1. URL에서 공백을 사용할 수 있다. (O/X)
 1. URL의 '호스트' 이름에서 ex)'naver.com' 퍼센트인코딩을 사용할 수 없다. (O/X)
 1. 일반적으로 URL을 인코딩 할 때 (아스키코드, 안전하지 않는 아스키코드를 제외하고) UTF-16 방식으로 인코딩한다. (O/X)
-1. 웹주소 : `https://ko.wikipedia.org/wiki/ %ec %82 %ac %eb %9e %91` 을 디코딩 하시오.  정답 : `https://ko.wikipedia.org/wiki/(.....)`
+1. 웹주소 : `https://ko.wikipedia.org/wiki/%ec%82%ac%eb%9e%91` 을 디코딩 하시오.  정답 : `https://ko.wikipedia.org/wiki/(.....)`
 <br>
 
 ### 2.5 　 스킴의 바다　 `junslee`
