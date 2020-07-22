@@ -14,6 +14,7 @@
 1. `http://www.joes-hardware.com/hammers;sales=false/index.html;graphics=true` 와 같이 각 경로조각은 자체 파라미터 컴포넌트를 가질 수 있다. (O/X)
 1. `http://www.joes-hardware.com/invertory-check.cgi?item=42&color=white` 에는 두 개의 질의(쿼리) 컴포넌트가 존재한다. (O/X)
 1. 사용자가 `http://www.joes-hardware.com/tools.html#drills` 를 가리키는 링크를 선택하면 drills 프래그먼트가 서버로 전송된다. (O/X)
+1. 프래그먼트를 이용하면 전체 리소스를 다운 받을 필요 없이 보고자 하는 리소스만 다운 받아 볼 수 있다. (O/X)
 <br>
 
 ### 2.3 　 단축 URL　 `yeha`
