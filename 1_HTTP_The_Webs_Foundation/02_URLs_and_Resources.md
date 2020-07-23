@@ -88,10 +88,9 @@
 1. `http://www.joes-hardware.com/invertory-check.cgi?item=42&color=white` 에는 두 개의 질의(쿼리) 컴포넌트가 존재한다. (O)
 1. 사용자가 `http://www.joes-hardware.com/tools.html#drills` 를 가리키는 링크를 선택하면 drills 프래그먼트가 서버로 전송된다. (X)
 1. 프래그먼트를 이용하면 전체 리소스를 다운 받을 필요 없이 보고자 하는 리소스만 다운 받아 볼 수 있다. (X)<br>
-6,7번 => 일반적인 HTTP 서버는 객체 일부가 아닌 전체만 다루기 때문에 클라이언트는 서버에 프래그먼트를 전달하지 않는다.
+=> (6,7번) 일반적인 HTTP 서버는 객체 일부가 아닌 전체만 다루기 때문에 클라이언트는 서버에 프래그먼트를 전달하지 않는다.
 브라우저가 서버로 부터 전체 리소스를 내려받은 후, 프래그먼트를 사용하여 당신이 보고자 하는 리소스의 일부를 보여준다 (p.35)<br>
-(실습해보는 법) 1. html에 <a name="begin"></a> 추가 (name 말고 id로 해도 무관)
-2. html에 <a href="#begin"> 추가해서 링크 들어가거나 URL 뒤에 #begin 쳐서 프래그먼트 써보기
++(프래그먼트 실습) <br> 1. html에 `<a name="begin"></a>` 추가 (name 말고 id로 해도 무관) 2. html에 `<a href="#begin">` 추가해서 링크 들어가거나 URL 뒤에 '#begin' 쳐서 프래그먼트 써보기
 <br>
 
 ### 2.3 　 단축 URL　 `yeha`
