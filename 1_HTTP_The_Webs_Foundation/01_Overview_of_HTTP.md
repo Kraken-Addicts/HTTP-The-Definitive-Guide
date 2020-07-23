@@ -1,6 +1,6 @@
 ## 01장 :octopus: HTTP 개관
 
-#### [:page_facing_up: 퀴즈해설 바로가기](#page_facing_up-답지-및-해설)
+#### [:page_facing_up: 퀴즈해설 바로가기](#page_facing_up-정답-및-해설)
 
 [1.1 　 HTTP: 인터넷의 멀티미디어 배달부](#11--http-인터넷의-멀티미디어-배달부-mihykim)<br>
 [1.2 　 웹 클라이언트와 서버](#12--웹-클라이언트와-서버-mihykim)<br>
@@ -308,7 +308,7 @@ http://www.yebalja.com/index.html
 
 
 
-## :page_facing_up: 답지 및 해설 
+## :page_facing_up: 정답 및 해설 
 
 ### 1.1 　 HTTP: 인터넷의 멀티미디어 배달부 　`mihykim`
 
@@ -428,4 +428,4 @@ http://www.yebalja.com/index.html
 
 
 
-[맨위로](#01장-octopus-http-개관)　[답지 및 해설](#page_facing_up-답지-및-해설)
+[맨위로](#01장-octopus-http-개관)　[퀴즈해설 바로가기](#page_facing_up-정답-및-해설)
