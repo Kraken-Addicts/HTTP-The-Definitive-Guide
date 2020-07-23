@@ -1,5 +1,7 @@
 ## 01장 :octopus: HTTP 개관
 
+#### [:page_facing_up: 퀴즈해설 바로가기](#page_facing_up-답지-및-해설)
+
 [1.1 　 HTTP: 인터넷의 멀티미디어 배달부](#11--http-인터넷의-멀티미디어-배달부-mihykim)<br>
 [1.2 　 웹 클라이언트와 서버](#12--웹-클라이언트와-서버-mihykim)<br>
 [1.3 　 리소스](#13--리소스-mihykim)<br>
@@ -10,7 +12,6 @@
 [1.8 　 웹의 구성요소](#18--웹의-구성요소-jehong)<br>
 [1.9 　 시작의 끝](#19--시작의-끝-jehong)<br>
 [1.10 　추가 정보](#110--추가-정보-taelee)<br>
-[:page_facing_up: 답지 및 해설](#page_facing_up-답지-및-해설)
 
 <br>
 
