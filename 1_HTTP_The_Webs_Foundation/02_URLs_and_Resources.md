@@ -67,7 +67,19 @@
 <br>
 
 ### 2.2 　 URL 문법　 `hylee`
-1. ㅎㅐㅈㅜㅅㅔㅇㅛ
+1. 다양한 스킴(HTTP, FTP, SMTP)은 완전히 동일한 문법을 사용하여 URL로 인터넷상의 모든 리소스를 찾을 수 있게 된다. (X)
+  =>  URL로 인터넷상의 모든 리소스를 찾을 수 있지만 스킴마다 URL 문법이 다르다(But. 대체로 형태와 문법면에서 유사하긴 하다) (p.30)
+1. 스킴은 대소문자를 가리지 않으므로 HTTP와 http는 같다. (O)
+1. http는 기본 포트로 80 포트를 사용한다. (단답식, 숫자)
+  => 참고로 https 는 443 포트를 기본으로 사용한다. (p.31)
+1. `http://www.joes-hardware.com/hammers;sales=false/index.html;graphics=true` 와 같이 각 경로조각은 자체 파라미터 컴포넌트를 가질 수 있다. (O)
+1. `http://www.joes-hardware.com/invertory-check.cgi?item=42&color=white` 에는 두 개의 질의(쿼리) 컴포넌트가 존재한다. (O)
+1. 사용자가 `http://www.joes-hardware.com/tools.html#drills` 를 가리키는 링크를 선택하면 drills 프래그먼트가 서버로 전송된다. (X)
+1. 프래그먼트를 이용하면 전체 리소스를 다운 받을 필요 없이 보고자 하는 리소스만 다운 받아 볼 수 있다. (X)
+  6,7번 => 일반적인 HTTP 서버는 객체 일부가 아닌 전체만 다루기 때문에 클라이언트는 서버에 프래그먼트를 전달하지 않는다.
+  브라우저가 서버로 부터 전체 리소스를 내려받은 후, 프래그먼트를 사용하여 당신이 보고자 하는 리소스의 일부를 보여준다 (p.35)
+  (실습해보는 법) 1. html에 <a name="begin"></a> 추가 (name 말고 id로 해도 무관)
+                 2. html에 <a href="#begin"> 추가해서 링크 들어가거나 URL 뒤에 #begin 쳐서 프래그먼트 써보기
 <br>
 
 ### 2.3 　 단축 URL　 `yeha`
