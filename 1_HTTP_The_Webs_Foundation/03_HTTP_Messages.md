@@ -69,9 +69,105 @@
 <br>
 
 ### 3.5 　 헤더　 `jehong`
-1. 자유롭게
-1. 내용 작성
-1. 해주세욘
+
+
+1. 일반 헤더 (General header)는 요청/응답에 관련없이 메시지에 대한 아주 기본적인 정보를 제공 ( O / X ) 
+
+2. 다음 중 일반 헤더에 해당되지 않는 것을 하나 고르세요.
+
+   a. Date: 메시지가 언제 만들어졌는지에 대한 날짜와 시간을 제공한다.
+
+   b. MIME-Version: 발송자가 사용한 MIME의 버전을 알려준다.
+
+   c. Expires: 이 엔터티가 더 이상 유효하지 않아 원본을 다시 받아와야 하는 일시
+
+   d. Transfer-Encoding: 수신자에게 안전한 전송을 위해 메시지에 어떤 인코딩이 적용되었는지 말해준다.
+
+   e. Via: 이 메시지가 어떤 중개자(프락시, 게이트웨이)를 거쳐 왔는지 보여준다.
+
+3. 요청 메시지에서만 의미를 갖는 `_______` 헤더는 누가 요청을 보냈는지에 대한 정보나 클라이언트의 선호 또는 능력에 대한 정보를 주어 서버가 클라이언트에게 더 나은 응답을 주기 위해 활용된다.
+
+4. 다음 헤더는 무엇을 의미할까요? 
+
+   ```
+   Accept: */*
+   ```
+
+5. 클라이언트가 이미 어떤 문서의 사본을 갖고 있으면서 서버에게 그 문서를 요청할 경우, 조건부 요청 헤더 (Conditional request header)를 통해 자신이 갖고 있는 사본과 다를 때만 전송해 달라고 요청할 수 있다. ( O / X ) 
+
+6. ( 요청 보안 헤더 / 응답 보안 헤더 )를 사용하면 요청하는 클라이언트가 어느 정도의 리소스에 접근하기 전에 자신을 인증하게 할 수 있다.
+
+7. `_______` 헤더는 응답 메시지에 적용되는 것으로 클라이언트에게 부가정보를 제공해 나중에 더 나은 요청을 할 수 있도록 도와준다. 
+
+8. 서버에 있는 HTML 문서가 한국어, 영어, 중국어로 번역되어 있어 여러 가지 표현이 가능한 상황이라면 HTTP/1.1은 `_______` 헤더를 통해 서버와 클라이언트가 어떤 표현을 택할 것인가 고를 수 있도록 지원한다.
+
+9. 요청 메시지에는 일반 헤더, 요청 헤더, 엔터니 헤더를 함께 사용할 수 있으며 응답 헤더는 사용하면 안된다. ( O / X )
+
+10. 아래는 실제 응답/요청 메시지에서 헤더들의 일부만 가져온 것입니다. 어느 것이 요청메시지/응답메시지인지 기입하세요
+
+    a. **`_______` 메시지**
+
+    > Referer: https://www.yebalja.com/ 
+    >
+    > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36
+
+     
+
+    b. **`_______` 메시지**
+
+    > Server: nginx/1.10.3 (Ubuntu) 
+    >
+    > Date: Sun, 26 Jul 2020 12:25:54 GMT 
+    >
+    > X-Powered-By: Next.js 
+    >
+    > Content-Type: text/html; charset=utf-8 
+    >
+    > ETag: "5d43f-DCYkjUo0QVf5cdUuMYIw1ISaUaM" 
+    >
+    > Vary: Accept-Encoding 
+    >
+    > Content-Encoding: gzip
+
+    
+
+    c. **`_______` 메시지**
+
+    > Connection: keep-alive 
+    >
+    > Upgrade-Insecure-Requests: 1 
+    >
+    > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36 
+    >
+    > Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9 
+    >
+    > Accept-Encoding: gzip, deflate 
+    >
+    > Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7 
+    >
+    > Cookie: day1host=h
+
+     
+
+    d. **`_______` 메시지**
+
+    > Date: Sun, 26 Jul 2020 16:23:01 GMT 
+    >
+    > Server: Apache 
+    >
+    > Last-Modified: Thu, 03 May 2018 02:14:10 GMT 
+    >
+    > ETag: "981030-208f-56b43c247cc52" 
+    >
+    > Accept-Ranges: bytes 
+    >
+    > Content-Length: 8335 
+    >
+    > Content-Type: image/png
+
+​				
+
+
 
 [:page_facing_up:  답지](#35--헤더-jehong-1)
 
@@ -152,9 +248,130 @@
 <br>
 
 ### 3.5 　 헤더　 `jehong`
-1. 자유롭게
-1. 내용 작성
-1. 해주세욘
+1. 일반 헤더 (General header)는 메시지의 종류에 상관없어 클라이언트와 서버 모두가 사용한다. ( `O` / X ) **p.76,77**
+
+2. 다음 중 일반 헤더에 해당되지 않는 것을 하나 고르세요. **p.77,78**
+
+   a. Date: 메시지가 언제 만들어졌는지에 대한 날짜와 시간을 제공한다.
+
+   b. MIME-Version: 발송자가 사용한 MIME의 버전을 알려준다.
+
+   `c. Expires: 이 엔터티가 더 이상 유효하지 않아 원본을 다시 받아와야 하는 일시`
+
+   > 엔터티 캐싱 헤더로 엔티티에 대해 설명하는 엔터티 헤더의 한 종류이다.
+
+   d. Transfer-Encoding: 수신자에게 안전한 전송을 위해 메시지에 어떤 인코딩이 적용되었는지 말해준다.
+
+   e. Via: 이 메시지가 어떤 중개자(프락시, 게이트웨이)를 거쳐 왔는지 보여준다.
+
+3. 요청 메시지에서만 의미를 갖는 `요청` 헤더는 누가 요청을 보냈는지에 대한 정보나 클라이언트의 선호 또는 능력에 대한 정보를 주어 서버가 클라이언트에게 더 나은 응답을 주기 위해 활용된다. **p.78**
+
+4. 다음 헤더는 무엇을 의미할까요? **p.77**
+
+   ```
+   Accept: */*
+   ```
+
+   >  클라이언트가 자신의 요청에 대응하는 어떤 미디어 타입도 받아들일 것임을 의미한다
+
+5. 클라이언트가 이미 어떤 문서의 사본을 갖고 있으면서 서버에게 그 문서를 요청할 경우, 조건부 요청 헤더 (Conditional request header)를 통해 자신이 갖고 있는 사본과 다를 때만 전송해 달라고 요청할 수 있다. ( `O` / X ) **p.80**
+
+6. ( `요청 보안 헤더` / 응답 보안 헤더 )를 사용하면 요청하는 클라이언트가 어느 정도의 리소스에 접근하기 전에 자신을 인증하게 할 수 있다. **p.80,82**
+
+7. `응답` 헤더는 응답 메시지에 적용되는 것으로 클라이언트에게 부가정보를 제공해 나중에 더 나은 요청을 할 수 있도록 도와준다. **p.81**
+
+8. 서버에 있는 HTML 문서가 한국어, 영어, 중국어로 번역되어 있어 여러 가지 표현이 가능한 상황이라면 HTTP/1.1은 `협상` 헤더를 통해 서버와 클라이언트가 어떤 표현을 택할 것인가 고를 수 있도록 지원한다. **p.81,82**
+
+9. 요청 메시지에는 일반 헤더, 요청 헤더, 엔터니 헤더를 함께 사용할 수 있으며 응답 헤더는 사용하면 안된다. ( `O` / X ) **p.77,82**
+
+10. 아래는 실제 응답/요청 메시지에서 헤더들의 일부만 가져온 것입니다. 어느 것이 요청메시지/응답메시지인지 기입하고 무엇때문인지 생각해보세요
+
+    a. **`요청` 메시지**
+
+    > **Referer**: https://www.yebalja.com/ 
+    >
+    > **User-Agent**: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36
+
+    - `Referer` 현재의 요청 URI가 들어있었던 문서의 URL을 제공하는 **요청 헤더**
+    - `User-Agent` 요청을 보낸 애플리케이션의 이름을 서버에게 말해주는 **요청 헤더**
+
+    
+
+    ![](https://images.velog.io/images/jehjong/post/af36c985-849f-4b6c-b410-1b0d0e061fb5/image.png) 
+
+    
+
+    b. **`응답` 메시지**
+
+    > **Server**: nginx/1.10.3 (Ubuntu) 
+    >
+    > Date: Sun, 26 Jul 2020 12:25:54 GMT 
+    >
+    > Content-Type: text/html; charset=utf-8 
+    >
+    > ETag: "5d43f-DCYkjUo0QVf5cdUuMYIw1ISaUaM" 
+    >
+    > **Vary**: Accept-Encoding 
+    >
+    > Content-Encoding: gzip
+
+    - `Server` 서버 어플리케이션의 이름과 버전을 알려주는 **응답 헤더**
+    - `Vary` 서버가 확인해 보아야 하고 그렇기 때문에 응답에 영향을 줄 수 있는 헤더의 목록을 알려주는 **협상 헤더**: 서버에게 서버가 보내도 되는 인코딩을 말해주는 **Accept 헤더**
+
+    
+
+    ![](https://images.velog.io/images/jehjong/post/26e08526-47d2-4cdd-830b-a6be39717047/image.png) 
+
+     
+
+    c. **`요청` 메시지**
+
+    > **Connection**: keep-alive 
+    >
+    > **User-Agent**: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36 
+    >
+    > **Accept**: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9 
+    >
+    > **Accept-Encoding**: gzip, deflate 
+    >
+    > **Accept-Language**: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7 
+
+    - `Connection` 클라이언트와 서버가 요청/응답 연결에 대한 옵션을 정할 수 이게 해주는 **일반 헤더**
+    - `User-Agent` 요청을 보낸 애플리케이션의 이름을 서버에게 말해주는 **요청 헤더**
+    - `Accept` 서버에게 서버가 보내도 되는 미디어 종류를 말해주는 **Accept 헤더**
+    - `Accept-Endocing` 서버에게 서버가 보내도 되는 인코딩을 말해주는 **Accept 관련 헤더**
+    - `Accept-Language` 서버에게 서버가 보내도 되는 언어를 말해주는 **Accept 관련 헤더**
+
+    
+
+    ![](https://images.velog.io/images/jehjong/post/35284f72-cfb7-4efb-8430-4f7e2ac82914/image.png)  
+
+    
+
+    d. **`응답` 메시지**
+
+    > Date: Sun, 26 Jul 2020 16:23:01 GMT 
+    >
+    > **Server**: Apache 
+    >
+    > Last-Modified: Thu, 03 May 2018 02:14:10 GMT 
+    >
+    > ETag: "981030-208f-56b43c247cc52" 
+    >
+    > **Accept-Ranges**: bytes 
+    >
+    > Content-Length: 8335 
+    >
+    > Content-Type: image/png
+
+    - `Server` 서버 어플리케이션의 이름과 버전을 알려주는 **응답 헤더**
+    - `Accept-Ranges` 서버가 자원에 대해 받아들일 수 있는 범위의 형태를 알려주는 **협상 헤더**
+
+    
+
+![](https://images.velog.io/images/jehjong/post/8cce52f4-f097-44a1-9938-d032c496f710/image.png)				
+
+
 
 [:memo: 문제](#35--헤더-jehong)
 
