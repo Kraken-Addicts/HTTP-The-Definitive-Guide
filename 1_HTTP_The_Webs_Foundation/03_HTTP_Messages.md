@@ -51,9 +51,16 @@
 <br>
 
 ### 3.3 　 메서드　 `daelee`
-1. 자유롭게
-1. 내용 작성
-1. 해주세욘
+1. HTTP 버전 1.1과 호환되고자 한다면 서버는 자신의 리소스에 GET 과 POST 메서드만을 구현하는 것만으로도 충분하다. (O / X)
+2. PUT,POST,DELETE 메소드는 서버 리소스를 생성 또는 변경하므로 안전하지 않다. (O / X)
+3. GET, HEAD, OPTION와 같은 안전한 메소드는 캐시가 가능하다. (O / X)
+4. 멱등한 메서드(Idempotent methods)란 *몇 번을 호출되더라도 동일한 결과를 리턴하는 메서드*를 말한다. 다음 중 멱등한 메서드는?
+   - (1) GET
+   - (2) POST
+   - (3) DELETE
+5. PUT은 리소스를 변경하기 위해 사용되며, 멱등하지 않고, 안전하지 않은 메소드이다. (O / X)
+6. PUT, POST 둘다 데이터를 생성하고 업데이트하는 메소드이지만, (1)________________________과 (2)_____________________에 따라 사용법이 다르다. (두 가지 차이점)
+
 
 [:page_facing_up:  답지](#33--메서드-daelee-1)
 
@@ -111,63 +118,63 @@
 
     a. **`_______` 메시지**
 
-    > Referer: https://www.yebalja.com/ 
-    >
-    > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36
+    Referer: https://www.yebalja.com/ 
+    
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36
 
      
 
     b. **`_______` 메시지**
 
-    > Server: nginx/1.10.3 (Ubuntu) 
-    >
-    > Date: Sun, 26 Jul 2020 12:25:54 GMT 
-    >
-    > X-Powered-By: Next.js 
-    >
-    > Content-Type: text/html; charset=utf-8 
-    >
-    > ETag: "5d43f-DCYkjUo0QVf5cdUuMYIw1ISaUaM" 
-    >
-    > Vary: Accept-Encoding 
-    >
-    > Content-Encoding: gzip
+    Server: nginx/1.10.3 (Ubuntu) 
+    
+    Date: Sun, 26 Jul 2020 12:25:54 GMT 
+    
+    X-Powered-By: Next.js 
+    
+    Content-Type: text/html; charset=utf-8 
+    
+    ETag: "5d43f-DCYkjUo0QVf5cdUuMYIw1ISaUaM" 
+    
+    Vary: Accept-Encoding 
+     
+    Content-Encoding: gzip
 
     
 
     c. **`_______` 메시지**
 
-    > Connection: keep-alive 
-    >
-    > Upgrade-Insecure-Requests: 1 
-    >
-    > User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36 
-    >
-    > Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9 
-    >
-    > Accept-Encoding: gzip, deflate 
-    >
-    > Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7 
-    >
-    > Cookie: day1host=h
+    Connection: keep-alive 
+    
+    Upgrade-Insecure-Requests: 1 
+    
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36 
+    
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9 
+    
+    Accept-Encoding: gzip, deflate 
+    
+    Accept-Language: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7 
+    
+    Cookie: day1host=h
 
      
 
     d. **`_______` 메시지**
 
-    > Date: Sun, 26 Jul 2020 16:23:01 GMT 
-    >
-    > Server: Apache 
-    >
-    > Last-Modified: Thu, 03 May 2018 02:14:10 GMT 
-    >
-    > ETag: "981030-208f-56b43c247cc52" 
-    >
-    > Accept-Ranges: bytes 
-    >
-    > Content-Length: 8335 
-    >
-    > Content-Type: image/png
+    Date: Sun, 26 Jul 2020 16:23:01 GMT 
+    
+    Server: Apache 
+    
+    Last-Modified: Thu, 03 May 2018 02:14:10 GMT 
+    
+    ETag: "981030-208f-56b43c247cc52" 
+    
+    Accept-Ranges: bytes 
+    
+    Content-Length: 8335 
+    
+    Content-Type: image/png
 
 ​				
 
@@ -234,9 +241,59 @@
 <br>
 
 ### 3.3 　 메서드　 `daelee`
-1. 자유롭게
-1. 내용 작성
-1. 해주세욘
+1. HTTP 버전 1.1과 호환되고자 한다면 서버는 자신의 리소스에 GET 과 POST 메서드만을 구현하는 것만으로도 충분하다. (X)
+
+2. PUT,POST,DELETE 메소드는 서버 리소스를 생성 또는 변경하므로 안전하지 않다. (O)
+
+   **안전한 메서드(Safe Method)**
+   
+   안전한 메소드란 서비 측의 상태 정보를 변경하지 않는 메소드를 가리킨다. 
+   
+   ```
+   GET v1/coffees/orders/1234
+   ```
+   
+   - 다만, 안전한 메서드가 서버에 작용을 유발하지 않는다는 보장은 없다. 원 목적이 그럴뿐이고 웹 개발자에게 달린 부분.
+
+3. GET, HEAD, OPTION와 같은 안전한 메소드는 캐시가 가능하다. (O)
+
+   **캐시 가능성(Cachable)**
+   
+   - 향후 재사용을 위해 이에 대한 응답을 저장할 수 있음을 나타낼 수 있다.
+   - 일반적으로 현재 시점의 응답이나 권한 있는 응답에 의존하지 않는 `안전한 메서드`는 캐시 가능한 것으로 정의한다.
+
+4. **멱등한 메서드(Idempotent methods)**란 *몇 번을 호출되더라도 동일한 결과를 리턴하는 메서드*를 말한다. 다음 중 멱등한 메서드는?
+
+   - (1) GET
+
+     GET 메소드는 여러 번 호출해도 타킷 리소스는 동일한 응답을 하므로, PUT 메소드는 동일한 리소슷 업데이트하고 이후에도 그 결과가 달라지지 않으므로 **멱등하다**.
+
+   - (2) POST
+
+     POST는 복수 호출 시 각기 다른 결과가 리턴되거나 새로운 리소스가 계속 만들어질 수 있으므로 **멱등하지 않다.**
+
+   - (3) DELETE
+
+     DELETE는 처음에 리소스가 삭제되면 더 이상 존재하지 않고 여러 번 호출해도 결과가 달라지지 않기에 **멱등하다.**
+
+   출처 : [RESTful API](https://lifeisgift.tistory.com/entry/Restful-API-개요)
+
+5. PUT은 리소스를 변경하기 위해 사용되며, 멱등하지 않고, 안전하지 않은 메소드이다. (X)
+
+   멱등함. PUT 메소드는 여러 차례 호출해도 동일한 리소스를 변경하므로 결과는 동일한다.
+
+6. PUT, POST 둘다 데이터를 생성하고 업데이트하는 메소드이지만, (1)________________________과 (2)_____________________에 따라 사용법이 다르다. (두 가지 차이점)
+
+   - Request-URI
+   - 멱등성
+
+   PUT, POST 둘다 데이터를 생성하고 업데이트하는 메소드이지만, *메소드의 멱등성*과 *리소스의 경로*에 따라 사용법이 다르다.
+   
+   이를테면, **POST /v1/coffees/orders**는 주문 데이터를 생성한 뒤 생성된 리소스를 가리키는 식별자를 리턴한다. 
+   
+   반면 **PUT /v1/coffees/orders/1234**는 주문번호 1234의 리소스가 존재하면 업데이트하고, 존재하지 않을 경우 주문번호가 1234인 데이터를 생성한 뒤 orders.1234를 식별자로 사용한다.
+   
+   -> 식별자까지 경로에 지정해줘야함
 
 [:memo: 문제](#33--메서드-daelee)
 
