@@ -431,7 +431,6 @@
     >
     > **Accept-Language**: ko-KR,ko;q=0.9,en-US;q=0.8,en;q=0.7 
 
-    - `Connection` 클라이언트와 서버가 요청/응답 연결에 대한 옵션을 정할 수 이게 해주는 **일반 헤더**
     - `User-Agent` 요청을 보낸 애플리케이션의 이름을 서버에게 말해주는 **요청 헤더**
     - `Accept` 서버에게 서버가 보내도 되는 미디어 종류를 말해주는 **Accept 헤더**
     - `Accept-Endocing` 서버에게 서버가 보내도 되는 인코딩을 말해주는 **Accept 관련 헤더**
