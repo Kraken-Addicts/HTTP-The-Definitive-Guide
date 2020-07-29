@@ -28,9 +28,17 @@
 <br>
 
 ### 4.2 　 TCP의 성능에 대한 고려　 `yeosong`
-
+- HTTP가 TCP 바로 윗 계층이므로, HTTP 트랜잭션의 성능을 논할 때 TCP 성능을 고려할 필요가 있다.
 
 #### 4.2.1 HTTP 트랜잭션 지연
+
+##### 트랜잭션이란
+- 하나의 논리적 기능을 수행하기 위한 작업의 단위
+- 작업의 완전성을 보장함
+  - 성공 시 커밋
+  - 실패시 롤백(방금 수행 실패한 트랜잭션을 이전 상태로 되돌리고, 재시도 혹은 폐기함.)
+- [HTTP transaction 1개는 1개의 HTTP request와 그에 상응하는 HTTP response로 이루어져있다.](https://www.informit.com/articles/article.aspx?p=32079)
+
 
 #### 4.2.2 성능 관련 중요 요소
 
