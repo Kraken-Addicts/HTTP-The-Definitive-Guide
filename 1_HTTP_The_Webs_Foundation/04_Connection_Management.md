@@ -37,7 +37,8 @@
 - 작업의 완전성을 보장함
   - 성공 시 커밋
   - 실패시 롤백(방금 수행 실패한 트랜잭션을 이전 상태로 되돌리고, 재시도 혹은 폐기함.)
-- [HTTP transaction 1개는 1개의 HTTP request와 그에 상응하는 HTTP response로 이루어져있다.](https://www.informit.com/articles/article.aspx?p=32079)
+- HTTP transaction 1개는 1개의 HTTP request와 그에 상응하는 HTTP response로 이루어져있다.
+  - [(이 페이지를 참고했어요)](https://www.informit.com/articles/article.aspx?p=32079)
 
 
 #### 4.2.2 성능 관련 중요 요소
