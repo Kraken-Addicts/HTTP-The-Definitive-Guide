@@ -6,10 +6,10 @@
   | 　 | 　 | 　스터디 날짜　 | 　비고　 |
   |:---|:---|:---:|:---|
   | [__1부 HTTP: 웹의 기초__](https://github.com/Kraken-Addicts/HTTP-The-Definitive-Guide/tree/master/1_HTTP_The_Webs_Foundation) | 　 | 　 | 　 |
-  |  |  [__01장__](./1_HTTP_The_Webs_Foundation/01_Overview_of_HTTP.md) HTTP 개관 | 07/21 (화) | 　 |
-  |  |  [__02장__](./1_HTTP_The_Webs_Foundation/02_URLs_and_Resources.md) URL과 리소스 | 07/23 (목) | 　 |
-  |  |  [__03장__](./1_HTTP_The_Webs_Foundation/03_HTTP_Messages.md) HTTP 메시지 | 07/28 (화) | 　 |
-  |  |  [__04장__](./1_HTTP_The_Webs_Foundation/04_Connection_Management.md) 커넥션 관리 | 07/30 (목) | 　 |
+  |  |  [__01장__](./1_HTTP_The_Webs_Foundation/01_Overview_of_HTTP.md) HTTP 개관 | 07/21 (화) | 🌱 |
+  |  |  [__02장__](./1_HTTP_The_Webs_Foundation/02_URLs_and_Resources.md) URL과 리소스 | 07/23 (목) | 🌱 |
+  |  |  [__03장__](./1_HTTP_The_Webs_Foundation/03_HTTP_Messages.md) HTTP 메시지 | 07/28 (화) | 🌱 |
+  |  |  [__04장__](./1_HTTP_The_Webs_Foundation/04_Connection_Management.md) 커넥션 관리 | 07/30 (목) | 🌱 |
   |||||
   | [__2부 HTTP 아키텍처__](https://github.com/Kraken-Addicts/HTTP-The-Definitive-Guide/tree/master/2_HTTP_Architecture) | 　 | 　 | 　 |
   |  |  [__05장__](./2_HTTP_Architecture/05_Web_Servers.md) 웹 서버 | 08/04 (화) | 　 |
