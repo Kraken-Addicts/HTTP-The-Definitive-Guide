@@ -4,7 +4,7 @@
 - __순서:__ ①mihykim ②daelee ③secho ④jehong ⑤taelee ⑥yeosong ⑦hylee ⑧yeha ⑨kukim ⑩junslee
 - __객원:__ doby
   | 　 | 　 | 　스터디 날짜　 | 　비고　 |
-  |:---|:---|:---:|:---|
+  |:---|:---|:---:|:---:|
   | [__1부 HTTP: 웹의 기초__](https://github.com/Kraken-Addicts/HTTP-The-Definitive-Guide/tree/master/1_HTTP_The_Webs_Foundation) | 　 | 　 | 　 |
   |  |  [__01장__](./1_HTTP_The_Webs_Foundation/01_Overview_of_HTTP.md) HTTP 개관 | 07/21 (화) | 🌱 |
   |  |  [__02장__](./1_HTTP_The_Webs_Foundation/02_URLs_and_Resources.md) URL과 리소스 | 07/23 (목) | 🌱 |
