@@ -75,7 +75,6 @@
 >   - 성공시 커밋
 >   - 실패시 롤백(방금 수행 실패한 트랜잭션을 이전 상태로 되돌리고, 재시도 혹은 폐기함.)
 > - HTTP transaction 1개는 1개의 HTTP request와 그에 상응하는 HTTP response로 이루어져있다.
->   - [(이것을 참고했어요)](https://www.informit.com/articles/article.aspx?p=32079)
 
 - HTTP 지연은 클라이언트나 서버가 너무 많은 데이터를 내려받거나 복잡하고 동적인 자원들을 실행할 때 생긴다. (O/X)
 - HTTP 지연의 대부분은 TCP 네트워크 지연 때문에 생긴다. (O/X)
@@ -223,6 +222,7 @@
 <br>
 
 ### 4.2 　 TCP의 성능에 대한 고려　 `yeosong`
+- 트랜잭션 설명 참고한 [페이지](https://www.informit.com/articles/article.aspx?p=32079)
 #### 4.2.1 HTTP 트랜잭션 지연
 - HTTP 지연은 클라이언트나 서버가 너무 많은 데이터를 내려받거나 복잡하고 동적인 자원들을 실행할 때 생긴다. (O)
 - HTTP 지연의 대부분은 TCP 네트워크 지연 때문에 생긴다. (O)
