@@ -316,7 +316,7 @@ Location: /main
 
 ##### 7번
 - 트랜잭션이 완료되었을 때 웹 서버는 트랜잭션이 어떻게 수행되었는지 로그를 로그파일에 기록하지 않는다 (O / X)
-- [nodeJS 로그파일 생성하는 법]([https://velog.io/@pizzu/nodejs-%EB%A1%9C%EA%B7%B8%ED%8C%8C%EC%9D%BC-%EC%83%9D%EC%84%B1-%ED%95%98%EB%8A%94-%EB%B2%95](https://velog.io/@pizzu/nodejs-로그파일-생성-하는-법))
+- [nodeJS 로그파일 생성하는 법](https://velog.io/@pizzu/nodejs-%EB%A1%9C%EA%B7%B8%ED%8C%8C%EC%9D%BC-%EC%83%9D%EC%84%B1-%ED%95%98%EB%8A%94-%EB%B2%95)
 
 <details>
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
