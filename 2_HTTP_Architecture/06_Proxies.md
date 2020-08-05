@@ -59,25 +59,21 @@
 <div markdown="1">
   
 
-#### 6.4.1 클라이언트가 수동으로 프락시 설정하기
-
-다음 중 프락시 수동 설정에 대한 설명을 모두 고르시오. (1, 2)
+#### 6.4.1 클라이언트가 프락시 수동으로 설정하기에 대한 설명이다. 옳은 것을 모두 고르시오. (1, 2)
 
 1) 장애시 대체 작동에 대한 지원이 없다.
 2) 하나의 프록시 서버만 지정가능하다.
 3) 대규모 조직에서 관리 문제를 방지하기 위해 사용한다. (X)
   - 대규모 조직을 관리하기에는 정적인 대응이며, 다양한 대응 옵션이 없기 때문에 부적절하다.
 
-#### 6.4.2  클라이언트가 PAC파일로 프락시 설정하기
-
-PAC(Proxy auto-config)에 대한 설명이다. 빈칸을 채우세요! (주관식)
+#### 6.4.2  클라이언트가 PAC(Proxy auto-config)파일로 프록시를 설정하기 대한 설명이다. 빈칸을 채우시오. (주관식)
 
 - PAC 파일은 `1) 자바스크립트`로 작성된 프로그램이다.
 - PAC파일의 확장자는 .pac이고, MIME타입은 `2) application/x-ns-proxy-autoconfig` 이다.
 - PAC 파일을 사용하려면, `3)브라우저 설정`에서 PAC 파일의 URI를 입력하면 된다.
 - PAC 파일은 `FindProxyForUrl(url, host)` 이라는 함수를 반드시 정의해야한다.
 
-[IEAK 11에서 프록시 자동 구성(.pac) 파일 사용 예제 보기](https://docs.microsoft.com/ko-kr/internet-explorer/ie11-ieak/proxy-auto-config-examples)
+참고: [IEAK 11에서 프록시 자동 구성(.pac) 파일 사용 예제 보기](https://docs.microsoft.com/ko-kr/internet-explorer/ie11-ieak/proxy-auto-config-examples)
 
 
 PAC 파일을 작성하여 트랜잭션의 종류에 따라 각기 다른 프록시를 사용하도록 만들 수 있다.
@@ -88,6 +84,20 @@ FindProxyForUrl(url, host) 함수의 반환값은 DIRECT, PROXY host:port, SOCKS
 #### 6.4.3 클라이언트가 WPAD로 프락시 설정하기
 3. WPAD (Web Proxy Auto-Discovery Protocol)
 
+브라우저에게 알맞은 PAC 파일을 자동으로 찾아주는 알고리즘이다.
+WPAD 프로토콜이 구현된 클라가 하게 될 일은
+
+PAC URI를 찾기 위해 WPAD를 사용한다.
+주어진 URI에서 PAC파일을 가져온다.
+프록시 서버를 알아내기 위해 PAC파일을 실행한다.
+알아낸 프록시 서버를 이용해서 요청을 처리한다.
+WPAD는 성공할 때까지 각 기법을 하나씩 시도해본다. (20장에서 자세히..)
+
+동적 호스트 발견 규약 DHCP (Dynamic Host Configuration Protocol)
+서비스 위치 규약 [SLP]
+DNS 잘 알려진 호스트 명
+DNS SRV 레코드
+DNS TXT 레코드 안의 서비스 URI
 
 
 </div>
