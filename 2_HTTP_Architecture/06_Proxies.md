@@ -140,7 +140,7 @@
    >
    > f, g. 프로필과 신원 정보를 없애기 위해 Cookie 헤더를 제거한다
 
-![](https://images.velog.io/images/jehjong/post/c33a5b2c-094f-4ae9-be32-a0dba2870ade/image.png)
+![](https://images.velog.io/images/jehjong/post/fd50302f-69c3-4697-bb17-24b32fbee47e/image.png)
 
 </div>
 </details>
