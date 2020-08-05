@@ -78,7 +78,7 @@
    b. `secho`는 HTTP스터디에서 관리되는 수많은 웹 서버들에 대한 접근 제어를 중앙화된 프락시 서버에서 설정해  `mihykim` 이 HTTP스터디의 기밀 내용에 접근할 때마다 비밀번호를 요구하도록 했다.
 ![](https://images.velog.io/images/jehjong/post/2013d7ae-b74d-4778-9317-0a6318ca4a67/image.png)
   
-  c. `kukim`은 해외 서버에서 GIF를 더 빠르게 다운받는 등의 더 나은 성능을 위해 트랜스코딩 프락시 사용에 돈을 지불했고 그 결과  `yeha`에게 적절한  GIF를 제 때 보낼 수 있게 되었다.
+   c. `kukim`은 해외 서버에서 GIF를 더 빠르게 다운받는 등의 더 나은 성능을 위해 트랜스코딩 프락시 사용에 돈을 지불했고 그 결과  `yeha`에게 적절한  GIF를 제 때 보낼 수 있게 되었다.
 
    d. `daelee`는 컨텐츠의 위치를 찾아내기 위해 웹 서버인 것처럼 위장한 대리 프락시를 사용해 공용 컨텐츠에 대한 느린 웹 서버의 성능을 개선했다.
 
@@ -94,7 +94,7 @@
 
    c. `_________` 프락시는 한국어 텍스트를 스페인어 텍스트로 변환하고 HTML문서를 휴대 전화의 작은 화면에서도 잘 볼 수 있도록 단순한 텍스트로 변환했다.
 
-![](https://images.velog.io/images/jehjong/post/ba51a91b-b4bd-446a-9fc8-db2b9f70b487/image.png)
+   ![](https://images.velog.io/images/jehjong/post/ba51a91b-b4bd-446a-9fc8-db2b9f70b487/image.png)
 
    d. `______________` 은/는 대기업 환경이나 그 외의 분산된 관료 조직에서 감사 추적을 하기 위해 사용될 수 있다.
 
@@ -122,7 +122,8 @@
 
    c. `트랜스코딩` 프락시는 한국어 텍스트를 스페인어 텍스트로 변환하고 HTML문서를 휴대 전화의 작은 화면에서도 잘 볼 수 있도록 단순한 텍스트로 변환했다.
 
-  ![](https://images.velog.io/images/jehjong/post/ba51a91b-b4bd-446a-9fc8-db2b9f70b487/image.png)
+   ![](https://images.velog.io/images/jehjong/post/ba51a91b-b4bd-446a-9fc8-db2b9f70b487/image.png)
+   
    d. `문서 접근 제어자` 은/는 대기업 환경이나 그 외의 분산된 관료 조직에서 감사 추적을 하기 위해 사용될 수 있다.
 
    
