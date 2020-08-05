@@ -58,8 +58,32 @@
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
 <div markdown="1">
   
-- 여기에
-- 해설을 작성해주세요
+
+#### 6.4.1 클라이언트가 수동으로 프락시 설정하기
+1. 다음 중 프락시 수동 설정에 대한 설명을 모두 고르시오. (    )
+
+- 1) 장애시 대체 작동에 대한 지원이 없다.
+- 2) 하나의 프록시 서버만 지정가능하다.
+- 3) 대규모 조직에서 관리 문제를 방지하기 위해 사용한다. 
+
+#### 6.4.2  클라이언트가 PAC파일로 프락시 설정하기
+
+2. PAC(Proxy auto-config)에 대한 설명으로 적절한 것은?
+
+
+PAC 파일은 `__________`로 작성된 프로그램이다. 
+PAC파일의 확장자는 .pac이고, MIME타입은 `_________`/x-ns-proxy-autoconfig 이다.
+
+PAC 파일을 사용하려면, 브라우저의 설정에서 PAC 파일의 URI를 입력해야 한다.
+PAC 파일을 작성하여 트랜잭션의 종류에 따라 각기 다른 프록시를 사용하도록 만들 수 있다.
+PAC 파일은 FindProxyForUrl(url, host)라는 함수를 반드시 정의해야한다.
+FindProxyForUrl(url, host) 함수의 반환값은 DIRECT, PROXY host:port, SOCKS host:port이다.
+
+
+#### 6.4.3 클라이언트가 WPAD로 프락시 설정하기
+3. WPAD (Web Proxy Auto-Discovery Protocol)
+
+
 
 </div>
 </details>
