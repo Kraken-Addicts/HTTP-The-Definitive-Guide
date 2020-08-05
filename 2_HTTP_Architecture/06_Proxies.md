@@ -72,15 +72,17 @@
 
 PAC(Proxy auto-config)에 대한 설명이다. 빈칸을 채우세요! (주관식)
 
-PAC 파일은 `1) 자바스크립트`로 작성된 프로그램이다.<br>
-PAC파일의 확장자는 .pac이고, MIME타입은 `2) application/x-ns-proxy-autoconfig` 이다.<br>
-PAC 파일을 사용하려면, `3)브라우저 설정`에서 PAC 파일의 URI를 입력하면 된다.<br>
-PAC 파일은 `FindProxyForUrl(url, host)` 이라는 함수를 반드시 정의해야한다.
+- PAC 파일은 `1) 자바스크립트`로 작성된 프로그램이다.
+- PAC파일의 확장자는 .pac이고, MIME타입은 `2) application/x-ns-proxy-autoconfig` 이다.
+- PAC 파일을 사용하려면, `3)브라우저 설정`에서 PAC 파일의 URI를 입력하면 된다.
+- PAC 파일은 `FindProxyForUrl(url, host)` 이라는 함수를 반드시 정의해야한다.
+
+[IEAK 11에서 프록시 자동 구성(.pac) 파일 사용 예제 보기](https://docs.microsoft.com/ko-kr/internet-explorer/ie11-ieak/proxy-auto-config-examples)
 
 
 PAC 파일을 작성하여 트랜잭션의 종류에 따라 각기 다른 프록시를 사용하도록 만들 수 있다.
-FindProxyForUrl(url, host) 함수의 반환값은
-DIRECT, PROXY host:port, SOCKS host:port이다.
+
+FindProxyForUrl(url, host) 함수의 반환값은 DIRECT, PROXY host:port, SOCKS host:port이다.
 
 
 #### 6.4.3 클라이언트가 WPAD로 프락시 설정하기
