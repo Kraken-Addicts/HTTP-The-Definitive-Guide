@@ -13,7 +13,7 @@
   |||||
   | [__2부 HTTP 아키텍처__](https://github.com/Kraken-Addicts/HTTP-The-Definitive-Guide/tree/master/2_HTTP_Architecture) | 　 | 　 | 　 |
   |  |  [__05장__](./2_HTTP_Architecture/05_Web_Servers.md) 웹 서버 | 08/04 (화) |  🌱 |
-  |  |  [__06장__](./2_HTTP_Architecture/06_Proxies.md) 프락시 | 08/06 (목) | 　 |
+  |  |  [__06장__](./2_HTTP_Architecture/06_Proxies.md) 프락시 | 08/06 (목) | 🌱 |
   |  |  [__07장__](./2_HTTP_Architecture/07_Caching.md) 캐시 | 08/11 (화) | 　 |
   |  |  [__08장__](./2_HTTP_Architecture/08_Integration_Points.md) 통합점: 게이트웨이, 터널, 릴레이 | 08/13 (목) | 　 |
   |  |  [__09장__](./2_HTTP_Architecture/09_Web_Robots.md) 웹 로봇 | 08/18 (목) | 　 |
