@@ -199,7 +199,7 @@
 
 - 아래의 PAC 파일은 http 트랜잭션이 발견될 경우 프락시 없이 직접 연결이 이루어지도록 지시하는 내용이다. (O/X)
 ~~~
-function 4)FindProxyForUrl(url, host) {
+function 4)______________(url, host) {
 if url.substring(0,5) == "http:" {
   return "PROXY http-proxy.yebalja.com:8080";
   } else {
