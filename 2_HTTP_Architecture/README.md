@@ -58,8 +58,8 @@
 <br>
 
 ## [10장](./10_HTTP.md) :octopus: HTTP/2.0 
-- __10.1__ 　  HTTP/2.0의 등장 배경　 `yeosong`
-- __10.2__ 　  개요　 `yeosong`
-- __10.3__ 　  HTTP/1.1과의 차이점　 `yeosong`
-- __10.4__ 　  알려진 보안 이슈　 `hylee`
+- __10.1__ 　  HTTP/2.0의 등장 배경　 `hylee`
+- __10.2__ 　  개요　 `hylee`
+- __10.3__ 　  HTTP/1.1과의 차이점　 `hylee`
+- __10.4__ 　  알려진 보안 이슈　 `kukim`
 <br>
