@@ -140,14 +140,117 @@
 <br>
 
 ### 7.8 　  사본을 신선하게 유지하기　 `secho`
-- 여기에
-- 문제를 작성해주세요
+### 7.8 　  사본을 신선하게 유지하기　 `secho`
+
+- 온라인 신문처럼 매일 바뀌는 문서들을 위해 캐시된 데이터는 서버의 데이터와 일치하도록 관리되어야한다. (O / X)
+- HTTP는 `cache-control`과 `Expires`라는 특별한 헤더로 원 서버가 각 문서에 유효기간을 붙일 수 있게 해준다. 다음에 빈칸을 채우세요.
+
+```
+HTTP/1.0 200 OK
+Date: Mon, 10 Aug 2020, 13:00 GMT
+Content-type : text/plain
+Content-length : 67
+(빈칸) : Fri, 15 Aug 2020, 05:00 GMT
+...
+```
+
+```
+HTTP/1.0 200 OK
+Date: Mon, 10 Aug 2020, 13:00 GMT
+Content-type : text/plain
+Content-length : 67
+(빈칸) : max-age = 484200
+...
+```
+
+
+
+- 캐시된 문서가 만료되면 캐시는 서버와 문서에 변경된 것이 있는지 검사하고 그렇다면 `신선한 사본`을 `새 유효기간`과 함께 얻어온다. (O / X)
+- 캐시된 문서가 만료되었으면 해당 문서는 원서버의 문서와 다르므로 원서버에 문서를 요청해 갱신해야한다.  ( O / X )
+- 캐시된 문서가 만료되었을 때 재검사를 수행해야한다. 재검사 결과 콘텐츠가 변경되지 않았으면 캐시는 새로운 사본과 새 만료일을 포함한 새 헤더들을 가져와서 갱신해야한다 (O / X )
+
+
+
+- 다음은 HTTP 응답헤더의 일부이다. `ETag`를 제공할 수 있는 조건부 요청헤더는? (주관식)
+  - 조건부 메서드는 재검사를 효율적으로 만들어주며 요청에 특별한 조건부 헤더를 추가함으로써 조건이 참인 경우에만 웹 서버는 객체를 반환한다.
+
+```
+200 OK
+Access-Control-Allow-Origin: *
+Connection: Keep-Alive
+Content-Encoding: gzip
+Content-Type: text/html; charset=utf-8
+Date: Mon, 18 Jul 2016 16:06:00 GMT
+Etag: "c561c68d0ba92bbeb8b0f612a9199f722e3a621a"
+https://gmlwjd9405.github.io/2019/01/28/http-header-types.html
+```
+
+
+
+- 다음은 조건부 요청과 응답에 대한 내용이다. 문서가 변경되었는지에 대한 여부를 판단하고, 그에 대한 이유를 작성하시오
+
+```
+조건부 요청
+GET /announce.html HTTP/1.0
+If-Modified-Since: Mon, 10 Aug 2020, 14:30:00
+```
+
+```
+응답
+HTTP/1.0 200 OK
+Date: Fri, 05 Sep 2020, 18:33:33
+Content-type: text/plain
+Content-length: 100
+Expires: Mon, 09 Sep 2020, 05:00:00
+
+I am a seasoned wedding planner.
+It occured to me that I hardly get any updates on your work progress these days
+```
+
+
+
 <details>
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
 <div markdown="1">
-  
-- 여기에
-- 해설을 작성해주세요
+
+
+- 온라인 신문처럼 매일 바뀌는 문서들을 위해 캐시된 데이터는 서버의 데이터와 일치하도록 관리되어야한다. (O / X) - ( O )
+- HTTP는 `cache-control`과 `Expires`라는 특별한 헤더로 원 서버가 각 문서에 유효기간을 붙일 수 있게 해준다. 다음에 빈칸을 채우세요.
+
+```
+HTTP/1.0 200 OK
+Date: Mon, 10 Aug 2020, 13:00 GMT
+Content-type : text/plain
+Content-length : 67
+(빈칸) : Fri, 15 Aug 2020, 05:00 GMT
+...
+```
+
+```
+HTTP/1.0 200 OK
+Date: Mon, 10 Aug 2020, 13:00 GMT
+Content-type : text/plain
+Content-length : 67
+(빈칸) : max-age = 484200
+...
+```
+
+(Expires, Cache-Control) = 둘이 같은 일을 하지만, expires은 절대 유효기간을 cache-control은 초단위로 명시한다.
+
+cache-control은 처음 생성된 이후부터 명시된 시간까지 신선함을 의미함.
+
+- 캐시된 문서가 만료되면 캐시는 서버와 문서에 변경된 것이 있는지 검사하고 그렇다면 `신선한 사본`을 `새 유효기간`과 함께 얻어온다. (O / X) - ( O )
+- 캐시된 문서가 만료되었으면 해당 문서는 원서버의 문서와 다르므로 원서버에 문서를 요청해 갱신해야한다.  ( O / X ) = ( X ) 캐시만료는 해당 문서와 서버의 문서가 다르다는 것을 의미하지 않음. 검사할 시간이 되었다는 의미.
+- 캐시된 문서가 만료되었을 때 재검사를 수행해야한다. 재검사 결과 콘텐츠가 변경되지 않았으면 캐시는 새로운 사본과 새 만료일을 포함한 새 헤더들을 가져와서 갱신해야한다 (O / X ) = X 콘텐츠변경이 없었으면 헤더들만 가져와서 갱신하면 됨.
+
+
+
+- 다음은 HTTP 응답헤더의 일부이다. `ETag`를 제공할 수 있는 조건부 요청헤더는? (주관식) => `If-None-Match`. 문서에 대한 일련번호와 같이 동작하는 특별태그 (ETag)를 제공할 수 있음. Http컨텐츠가 바뀌었는지 검사할 수 있는 태그
+
+
+
+- 다음은 조건부 요청과 응답에 대한 내용이다. 문서가 변경되었는지에 대한 여부를 판단하고, 그에 대한 이유를 작성하시오
+  - 변경이 없는 경우 304를 반환하고 변경시 **본문**과 함께 200을 반환함.
 
 </div>
 </details>
