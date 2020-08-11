@@ -356,9 +356,10 @@ cache-control은 처음 생성된 이후부터 명시된 시간까지 신선함�
 
    
 
+
 5. 다음 빈칸들을 채우세요.
 
-   캐시가 성능 개선을 위해 신선하지 않은(만료된) 객체를 제공하도록 하기 `_______a_______` 헤더를 사용할 수 있으며 캐시가 신선도 검사를 시도했을 때 원 서버가 사용할 수 없는 상태라면 캐시는 반드시 `__b__` Gateway Timeout error를 반환해야 한다.
+   캐시가 해당 객체의 신선하지 않은(만료된) 사본을 원 서버와의 최초의 재검사 없이 제공해서는 안 됨을 의미하기 위해 `_______a_______` 헤더를 사용할 수 있으며 이 경우 원 서버가 사용할 수 없는 상태라면 캐시는 반드시 `__b__` Gateway Timeout error를 반환해야 한다.
 
    
 
@@ -380,17 +381,17 @@ cache-control은 처음 생성된 이후부터 명시된 시간까지 신선함�
 
    **보기**
 
-   ㄱ. `Cache-control: max-stale`
+   `Cache-control: max-stale`
 
-   ㄴ. `Cache-Control: min-fresh` 
+   `Cache-Control: min-fresh` 
 
-   ㄷ. `Cache-Control: max-age` 
+   `Cache-Control: max-age` 
 
-   ㄹ. `Cache-Control: no-cache`, `Pragma: no-cache`
+   `Cache-Control: no-cache`, `Pragma: no-cache`
 
-   ㅁ. `Cache-Control: no-store` 
+   `Cache-Control: no-store` 
 
-   ㅂ. `Cache-Control: only-if-cached`
+   `Cache-Control: only-if-cached`
 
    a. `_____________`: 클라이언트는 지금으로부터 적어도 지정된 시간 후까지 신선한 문서만을 받아들인다.
 
@@ -441,15 +442,14 @@ cache-control은 처음 생성된 이후부터 명시된 시간까지 신선함�
    >
    >이런 값들은 몇몇 소프트웨어와 문제를 일으킬 수 있어 가급적 받아들일 수는 있어야 하나 생성해서는 안된다. **p.210**
 
-   
+  
 
 5. 다음 빈칸들을 채우세요.
 
-   캐시가 성능 개선을 위해 신선하지 않은(만료된) 객체를 제공하도록 하기 `Must-Revalidate` 헤더를 사용할 수 있으며 캐시가 신선도 검사를 시도했을 때 원 서버가 사용할 수 없는 상태라면 캐시는 반드시 `504` Gateway Timeout error를 반환해야 한다. 
+   캐시가 해당 객체의 신선하지 않은(만료된) 사본을 원 서버와의 최초의 재검사 없이 제공해서는 안 됨을 의미하기 위해 `_______a_______` 헤더를 사용할 수 있으며 이 경우 원 서버가 사용할 수 없는 상태라면 캐시는 반드시 `__b__` Gateway Timeout error를 반환해야 한다.
 
-   >  Must-Revalidate **p.211**
+   >  Must-Revalidate, 504 **p.211**
 
-   
 
 6. 응답이 `Cache-Control: max-age` 헤더나 `Expires` 헤더 중 어느 것도 포함하지 않고 있다면 캐시는 경험적인 방법으로 최대 나이를 계산하며 이 값이 24시간보다 크다면 `Heuristic Expiration` 경고 헤더가 응답에 추가되어야 한다.
 
