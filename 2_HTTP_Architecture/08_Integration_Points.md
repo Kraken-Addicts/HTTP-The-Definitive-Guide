@@ -68,7 +68,7 @@ HTTP/HTTPS는 클라이언트는 일반 HTTP를 사용하여 웹을 탐색할 �
 4. 위 그림을 보면 CGI는 각각의 클라이언트 요청에 대하여 각각의 프로세스를 생성하는데, 이러한 방식으로 인해 생길 수 있는 문제점은 무엇인가요? (주관식)<br>
 <br>
 5. 위의 문제점을 보완하고자 개발된 새로운 CGI형식은 무엇인가요?
-
+<br>
 <details>
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
 <div markdown="1">
@@ -86,14 +86,16 @@ HTTP/HTTPS는 클라이언트는 일반 HTTP를 사용하여 웹을 탐색할 �
 
 ### 8.4 　  애플리케이션 인터페이스와 웹 서비스　 `junslee`
 
+`<보기> SOAP, REST, JSON, XML`
 
+1. 웹 서비스는 `_____`방식을 통해 `_____`데이터 포맷 을 사용하여 정보를 교환한다. 현대 웹 서비스의 데이터 교환 방식은 `_____`방식을 더 많이 쓰며, 데이터의 포맷도 `_____`을 주로 사용한다.
 
 <details>
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
 <div markdown="1">
   
-- 여기에
-- 해설을 작성해주세요
+1. 웹 서비스는 `SOAP`방식을 통해 `XML`데이터 포맷 을 사용하여 정보를 교환한다. 현대 웹 서비스의 데이터 교환 방식은 `REST`방식을 더 많이 쓰며, 데이터의 포맷도 `JSON`을 주로 사용한다. <br>
+-- 참고하면 좋은 글 https://gmlwjd9405.github.io/2018/09/21/rest-and-restful.html (REST란? REST API란? RESTful이란?)
 
 </div>
 </details>
