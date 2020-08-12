@@ -41,7 +41,7 @@
 <br>
 
 ### 8.2 　  프로토콜 게이트웨이　 `kukim`
-1. 서버에 HTTP를 활용해 FTP 요청을 할때 게이트웨이에 HTTP 트래픽을 바로 보낼수 없고 서버로 FTP 요청을하여 처리한다. (O/X) 
+1. 클라이언트가 서버에 HTTP를 활용해 FTP 요청을 할때 게이트웨이에 HTTP 트래픽을 바로 보낼수 없다. (O/X) 
 2. HTTP/HTTPS 와 HTTPS/HTTP의 차이를 설명하시오. (주관식)
 
 
@@ -49,10 +49,10 @@
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
 <div markdown="1">
 1.  
-정답 : X (프락시에 트래픽을 바로 보내는 것 같이 게이트웨이에도 HTTP 트래픽을 바로 보낼 수 있다.(브라우저에서 명시적으로 설정도 가능))
+정답 : X (프락시에 트래픽을 바로 보내는 것 같이 게이트웨이에도 HTTP 트래픽을 바로 보낼 수 있다.(브라우저에서 명시적으로 설정도 가능하다.))  
 2.  
-HTTP/HTTPS는 클라이언트는 일반 HTTP를 사용하여 웹을 탐색할 수 있지만 게이트웨이는 자동으로 사용자의 모든 정보를 암호화하여 서버에게 전송하는 시스템이고 HTTPS/HTTP는 클라이언트에게 HTTPS 요청을 받아 복호화하여 웹서버로 HTTP 요청을 보낸다. 게이트웨이와 원 서버 간의 암호화하지 않은 트래픽을 전송하기 때문에 게이트웨이와 원 서버 간에 있는 네트워크가 안전한지 확인을 하고 사용해야 한다.  
-<a href="https://ibb.co/P410Kkr"><img src="https://i.ibb.co/5vswmZ1/Screen-Shot-2020-08-12-at-3-00-41-PM.png" alt="Screen-Shot-2020-08-12-at-3-00-41-PM" border="0"></a>
+HTTP/HTTPS는 클라이언트는 일반 HTTP를 사용하여 웹을 탐색할 수 있지만 게이트웨이는 자동으로 사용자의 모든 정보를 암호화하여 서버에게 전송하는 시스템이고 HTTPS/HTTP는 클라이언트에게 HTTPS 요청을 받아 복호화하여 웹서버로 HTTP 요청을 보낸다. 게이트웨이와 원 서버 간의 암호화하지 않은 트래픽을 전송하기 때문에 게이트웨이와 원 서버 간에 있는 네트워크가 안전한지 확인을 하고 사용해야 한다.    
+<a href="https://ibb.co/P410Kkr"><img src="https://i.ibb.co/5vswmZ1/Screen-Shot-2020-08-12-at-3-00-41-PM.png" alt="Screen-Shot-2020-08-12-at-3-00-41-PM" border="0"></a>  
 <a href="https://ibb.co/GcDQhr4"><img src="https://i.ibb.co/ChyKrS3/Screen-Shot-2020-08-12-at-3-00-50-PM.png" alt="Screen-Shot-2020-08-12-at-3-00-50-PM" border="0"></a>
 </div>
 </details>
