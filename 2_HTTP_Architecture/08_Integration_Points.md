@@ -1,8 +1,25 @@
 ## 08장 :octopus: 통합점: 게이트웨이, 터널, 릴레이
 
 ### 8.1 　  게이트웨이　 `kukim`
-- 여기에
-- 문제를 작성해주세요
+
+1. 그림을 참고하여 아래에 답하시오.
+![image](https://img1.daumcdn.net/thumb/R1280x0/?scode=mtistory2&fname=https%3A%2F%2Fblog.kakaocdn.net%2Fdn%2FcTShD1%2FbtqDQ8zqmH5%2F1Z8hrRNKAg9BcMS5ydmhN1%2Fimg.jpg)
+
+1.1. a) 클라이언트가 게이트웨이를 통해 웹서버에 FTP 요청하는 순서는 무엇인가?
+- 1. FTP 커넥션을 맺는다.
+- 2. FTP 서버에 적절한 명령을 전송한다.
+- 3. 적절한 HTTP 헤더와 함께 HTTP를 클라이언트에게 보낸다.
+- 4. FTP URL을 가르키는 HTTP 요청을 받는다.
+
+1.2. b) HTTPS/HTTP의 상황에서 게이트웨이는 해당 서버 인증서를 설치할 필요 없이 클라이언트가 보낸 암호화 정보를 서버에게 인증을 요청해 암호를 해독한 후 서버에게 보내준다. (O/X)
+
+1.3 c)클라이언트가 웹에서 물건을 사거나 일기예보를 보거나 주식정보를 볼 때 사실 웹 서버에 직접 방문하여 정적인 정보를 요청하여 확인한다. (O/X) 
+
+2. 다음 중 클라이언트 프로토콜과 서버 프로토콜은 무엇인가?
+- `HTTP/FTP`일 때
+  - 클라이언트 프로토콜 : `_____`
+  - 서버 프로토콜 : `_____`
+ 
 <details>
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
 <div markdown="1">
