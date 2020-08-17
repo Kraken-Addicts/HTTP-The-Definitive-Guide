@@ -48,9 +48,9 @@
 
 그래서  `daelee`는 `subdir`에다가  2(__)으로 향하는 링크를 걸고 사악한 웃음을 지어보였다.
 
-/   ㅡ index.html
+/home   ㅡ index.html(home의 하위)
 
-​    ㅡ subdir
+​    ㅡ   subdir(home의 하위)
 
 
 
