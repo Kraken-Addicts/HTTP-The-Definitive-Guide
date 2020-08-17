@@ -323,28 +323,123 @@
 <br>
 
 ### 9.3 　  부적절하게 동작하는 로봇들　 `taelee`
-- 여기에
-- 문제를 작성해주세요
+
+#### 주어진 상황에 맞는 보기를 찾아 고르세요
+
+보기) `폭주하는 로봇`, `오래된 URL`, `길고 잘못된 URL`, `호기심이 지나친 로봇`,`동적 게이트웨이 접근`
+
+1. 태혁이가 만든 웹 로봇 `건희` 는 웹 서버들을 서핑하며 자료를 수집한다. 
+어느날 순환에 빠지도록 설계된 사이트에 로봇 `건희` 가 방문하게 된다. 
+아쉽게도 태혁이는 HTTP 스터디를 하지 못해서 `건희` 가 스스로 순환에서 빠져나오는 코드를 짜지 못했다. 
+`건희` 는 결국 해당 사이트에 미친듯이 방문했고 서버에 엄청난 과부하를 주었다. 
+##### 여기서 `건희` 는 어떤 로봇인가?
+   
+2. 태혁이가 만든 웹 로봇 `현준` 이는 사이트에서 명시적으로 링크하지 않은 문서도 전부 수집한다. 오늘은 세초가 만든 서버에 로봇 `현준` 이가 방문했다. 세초는 누구에게도 보여주고 싶지 않은 사진을 서버에 두고 아무데도 명시적으로 링크를 걸지 않았는데 `현준` 이가 수집해버렸다. 심지어 그 [사진](https://images.velog.io/images/taelee/post/d11686a5-6cd4-4ded-9df2-9139b2f0e1b0/secho's%20love.png)에는 세초를 사랑하는 사람의 눈빛이 담겨있었다.
+##### 여기서 `현준` 이는 어떤 로봇인가?
+
+
+
 <details>
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
 <div markdown="1">
   
-- 여기에
-- 해설을 작성해주세요
+1. `건희`는 `폭주하는 로봇`이다.
+  
+2. `현준`이는 `호기심이 지나친 로봇`이다.
 
 </div>
 </details>
 <br>
 
 ### 9.4 　  로봇 차단하기　 `taelee`
-- 여기에
-- 문제를 작성해주세요
+
+##### 1. 로봇은 웹 리소스를 수집하는 동시에 robot.txt를 요청하여 해당 페이지를 가져올 수 있는 권한이 있는지 확인한다.(O----------X)
+
+##### 2. 하나의 호스트와 포트에는 여러개의 robot.txt가 있을 수 있다.(O----------X)
+
+##### 3. 로봇이 robot.txt에 대한 요청 후 404 응답을 받았을 때, 로봇은 해당 사이트를 수집해서는 안된다.(O----------X)
+
+##### 4. 로봇이 robot.txt에 대한 요청 후 3XX 응답(리다이렉션)을 받았다면 로봇은 리소스가 발견될 때까지 리다이렉트를 따라가야 한다.(O----------X)
+
+##### 5. 다음은 태혁이가 만든 사이트`(www.openthecluster.com)`의 robot.txt이다. 
+
+```txt
+###############################
+#안녕하세요 여기는 태혁이의 사이트입니다.
+###############################
+
+User-Agent: Jehong-Spider
+Allow: / 
+
+User-Agent: Secho-Spider
+Disallow: /private/photo
+Disallow: /yauridu
+
+```
+
+위 예시를 보고 각각의 웹 로봇의 접근권한이 알맞게 짝지은것을 고르시오.
+
+|      | URL                                         | Jehong-Spider | Secho-Spider | Hylee-Spider |
+| :--: | ------------------------------------------- | :-----------: | :----------: | :----------: |
+|  1   | http://www.openthecluster.com/              |       O       |      O       |     (f)      |
+|  2   | http://www.openthecluster.com/private       |       O       |     (c)      |     (g)      |
+|  3   | http://www.openthecluster.com/private/photo |      (a)      |     (d)      |     (h)      |
+|  4   | http://www.openthecluster.com/yauridu       |      (b)      |     (e)      |     (i)      |
+
+##### 6. html페이지에서 meta태그를 통해 개별적으로 웹 로봇의 행동을 차단할 수 있다. NOINDEX와 NOFOLLOW의 차이를 설명하시오.
+
+
+
 <details>
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
 <div markdown="1">
-  
-- 여기에
-- 해설을 작성해주세요
+
+##### 1. 로봇은 웹 리소스를 수집하는 동시에 robot.txt를 요청하여 해당 페이지를 가져올 수 있는 권한이 있는지 확인한다.(X)
+
+리소스보다 robot.txt를 먼저 요청해서 권한을 확인한다.
+
+##### 2. 하나의 호스트와 포트에는 여러개의 robot.txt가 있을 수 있다.(X)
+
+한 호스트의 포트당 한개의 robot.txt가 있다. 
+
+##### 3. 로봇이 robot.txt에 대한 요청 후 404 응답을 받았을 때, 로봇은 해당 사이트를 수집해서는 안된다.(X)
+
+웹 로봇의 차단 규칙을 담고 있는 robot.txt파일이 없으므로 해당 사이트를 수집해도 된다.
+
+##### 4. 로봇이 robot.txt에 대한 요청 후 3XX 응답(리다이렉션)을 받았다면 로봇은 리소스가 발견될 때까지 리다이렉트를 따라가야 한다.(O)
+
+##### 5. 다음은 태혁이가 만든 사이트`(www.openthecluster.com)`의 robot.txt이다. 
+
+```txt
+###############################
+#안녕하세요 여기는 태혁이의 사이트입니다.
+###############################
+
+User-Agent: Jehong-Spider
+Allow: / 
+
+User-Agent: Secho-Spider
+Disallow: /private/photo
+Disallow: /yauridu
+
+```
+
+위 예시를 보고 각각의 웹 로봇의 접근권한이 알맞게 짝지은것을 고르시오.
+
+|      | URL                                         | Jehong-Spider | Secho-Spider | Hylee-Spider |
+| :--: | ------------------------------------------- | ------------- | ------------ | :----------: |
+|  1   | http://www.openthecluster.com/              | O             | O            |      O       |
+|  2   | http://www.openthecluster.com/private       | O             | O            |      O       |
+|  3   | http://www.openthecluster.com/private/photo | O             | X            |      O       |
+|  4   | http://www.openthecluster.com/yauridu       | O             | X            |      O       |
+
+Hylee-Spider가 걸리는 user-agent 조건이 없으므로 이경우에는 모든 권한이 생긴다.(269p 중간)
+
+##### 6. html페이지에서 meta태그를 통해 개별적으로 웹 로봇의 행동을 차단할 수 있다. NOINDEX와 NOFOLLOW의 차이를 설명하시오.
+
+noindex: 현재 페이지 수집 금지
+
+nofollow : 현재 페이지가 링크한 페이지들 수집금지
 
 </div>
 </details>
