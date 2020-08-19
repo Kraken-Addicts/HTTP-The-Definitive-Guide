@@ -50,16 +50,16 @@
 - [google HTTP/2 소개](https://developers.google.com/web/fundamentals/performance/http2?hl=ko)
 
 - Binary Framing Layer
-![https://developers.google.com/web/fundamentals/performance/http2/images/binary_framing_layer01.svg?hl=ko](https://developers.google.com/web/fundamentals/performance/http2/images/binary_framing_layer01.svg?hl=ko =250x250)
+<img src="https://developers.google.com/web/fundamentals/performance/http2/images/binary_framing_layer01.svg?hl=ko" width="300" height="300">
 
 - 요청 및 응답 다중화
-![https://developers.google.com/web/fundamentals/performance/http2/images/multiplexing01.svg?hl=ko](https://developers.google.com/web/fundamentals/performance/http2/images/multiplexing01.svg?hl=ko)
+<img src="https://developers.google.com/web/fundamentals/performance/http2/images/multiplexing01.svg?hl=ko" width="300" height="300">
 
 - 헤더 압축
-![https://developers.google.com/web/fundamentals/performance/http2/images/header_compression01.svg?hl=ko](https://developers.google.com/web/fundamentals/performance/http2/images/header_compression01.svg?hl=ko)
+<img src="https://developers.google.com/web/fundamentals/performance/http2/images/header_compression01.svg?hl=ko" width="300" height="300">
 
 - HTTP/1.1 vs HTTP/2
-![https://evan-moon.github.io/static/3752593b39ad6ad4dee6a23573eff5d3/29d31/multiplexing.jpg](https://evan-moon.github.io/static/3752593b39ad6ad4dee6a23573eff5d3/29d31/multiplexing.jpg){: width="100" height="100"}
+<img src="https://evan-moon.github.io/static/3752593b39ad6ad4dee6a23573eff5d3/29d31/multiplexing.jpg" width="300" height="300">
 
 <details>
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
