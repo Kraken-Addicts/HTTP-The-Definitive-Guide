@@ -79,6 +79,7 @@ reference : https://www.veracode.com/security/encapsulation
 
 ### HTTP/2.0 그림으로 살펴보기
 - [Google - HTTP/2 소개](https://developers.google.com/web/fundamentals/performance/http2?hl=ko)
+- [http/1.1 vs http/2.0 속도비교, 개발자 도구를 통해 실제 메세지도 확인 가능](https://www.httpvshttps.com/)
 
 - HTTP/1.1 vs HTTP/2
 <img src="https://evan-moon.github.io/static/3752593b39ad6ad4dee6a23573eff5d3/29d31/multiplexing.jpg" width="300" height="300">
