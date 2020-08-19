@@ -47,11 +47,10 @@
 2. +++) 캡슐화 공격이란 무엇인가?
 3. HTTP/2.0은 HTTP/1.1과 달리 스트림과 멀티플렉싱을 통해 효율적으로 통신할 수 있다. 이때 발생할 수 있는 보안 이슈는 무엇인가?
 
-- 함께 살펴보면 좋은 자료
 - [google HTTP/2 소개](https://developers.google.com/web/fundamentals/performance/http2?hl=ko)
 
 - Binary Framing Layer
-![https://developers.google.com/web/fundamentals/performance/http2/images/binary_framing_layer01.svg?hl=ko](https://developers.google.com/web/fundamentals/performance/http2/images/binary_framing_layer01.svg?hl=ko)
+![https://developers.google.com/web/fundamentals/performance/http2/images/binary_framing_layer01.svg?hl=ko](https://developers.google.com/web/fundamentals/performance/http2/images/binary_framing_layer01.svg?hl=ko =250x250)
 
 - 요청 및 응답 다중화
 ![https://developers.google.com/web/fundamentals/performance/http2/images/multiplexing01.svg?hl=ko](https://developers.google.com/web/fundamentals/performance/http2/images/multiplexing01.svg?hl=ko)
@@ -59,8 +58,9 @@
 - 헤더 압축
 ![https://developers.google.com/web/fundamentals/performance/http2/images/header_compression01.svg?hl=ko](https://developers.google.com/web/fundamentals/performance/http2/images/header_compression01.svg?hl=ko)
 
-HTTP/1.1 vs HTTP/2
-![https://evan-moon.github.io/static/3752593b39ad6ad4dee6a23573eff5d3/29d31/multiplexing.jpg](https://evan-moon.github.io/static/3752593b39ad6ad4dee6a23573eff5d3/29d31/multiplexing.jpg)
+- HTTP/1.1 vs HTTP/2
+![https://evan-moon.github.io/static/3752593b39ad6ad4dee6a23573eff5d3/29d31/multiplexing.jpg](https://evan-moon.github.io/static/3752593b39ad6ad4dee6a23573eff5d3/29d31/multiplexing.jpg =250x250)
+
 <details>
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
 <div markdown="1">
