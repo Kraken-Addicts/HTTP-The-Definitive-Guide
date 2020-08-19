@@ -80,6 +80,9 @@ reference : https://www.veracode.com/security/encapsulation
 ### HTTP/2.0 그림으로 살펴보기
 - [Google - HTTP/2 소개](https://developers.google.com/web/fundamentals/performance/http2?hl=ko)
 
+- HTTP/1.1 vs HTTP/2
+<img src="https://evan-moon.github.io/static/3752593b39ad6ad4dee6a23573eff5d3/29d31/multiplexing.jpg" width="300" height="300">
+
 - Binary Framing Layer
 <img src="https://developers.google.com/web/fundamentals/performance/http2/images/binary_framing_layer01.svg?hl=ko" width="500" height="500">
 
@@ -89,8 +92,7 @@ reference : https://www.veracode.com/security/encapsulation
 - 헤더 압축
 <img src="https://developers.google.com/web/fundamentals/performance/http2/images/header_compression01.svg?hl=ko" width="500" height="500">
 
-- HTTP/1.1 vs HTTP/2
-<img src="https://evan-moon.github.io/static/3752593b39ad6ad4dee6a23573eff5d3/29d31/multiplexing.jpg" width="300" height="300">
+
 </div>
 </details>
 <br>
