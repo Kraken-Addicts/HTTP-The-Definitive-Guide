@@ -17,7 +17,7 @@
   |  |  [__07장__](./2_HTTP_Architecture/07_Caching.md) 캐시 | 08/11 (화) | 🌱 |
   |  |  [__08장__](./2_HTTP_Architecture/08_Integration_Points.md) 통합점: 게이트웨이, 터널, 릴레이 | 08/13 (목) | 🌱 |
   |  |  [__09장__](./2_HTTP_Architecture/09_Web_Robots.md) 웹 로봇 | 08/18 (화) | 🌱 |
-  |  |  [__10장__](./2_HTTP_Architecture/10_HTTP.md) HTTP/2.0 | 08/20 (목) | 　 |
+  |  |  [__10장__](./2_HTTP_Architecture/10_HTTP.md) HTTP/2.0 | 08/20 (목) | 🌱 |
   |||||
   | [__3부 식별, 인가, 보안__](https://github.com/Kraken-Addicts/HTTP-The-Definitive-Guide/tree/master/3_Identification_Authorization_and_Security) | 　 | 　 | 　 |
   |  |  [__11장__](./3_Identification_Authorization_and_Security/11_Client_Identification_and_Cookies.md) 클라이언트 식별과 쿠키 | 08/25 (화) | 　 |
