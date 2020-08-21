@@ -12,8 +12,8 @@
 <details>
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
 <div markdown="1">
-1. HTTP 트랜잭션은 상태가 없다. (O/X)
-- 정답 : O
+ 
+1. HTTP 트랜잭션은 상태가 없다. (O/X)  :  정답 , O
 2. 다음 중 용자 식별 기술 중 아닌 것은?
 - a. 사용자 식별 관련 정보를 전달하는 HTTP 헤더들
 - b. 클라이언트 IP 주소 추적으로 알아낸 IP 주소로 사용자를 식별
