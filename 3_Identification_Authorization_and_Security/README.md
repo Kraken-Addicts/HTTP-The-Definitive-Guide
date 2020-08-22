@@ -1,4 +1,4 @@
-# 3부 HTTP 아키텍처
+# 3부 식별, 인가, 보안
 
 ## [11장](./11_Client_Identification_and_Cookies.md) 클라이언트 식별과 쿠키
 - __11.1__ 　 개별 접촉　 `kukim`
