@@ -156,14 +156,83 @@
 <br>
 
 ### 11.6.5 - 11.6.7 쿠키(2)　 `daelee`
-- 여기에
-- 문제를 작성해주세요
+1. 현재 사용되는 쿠키 명세에는 넷스케이프가 최초로 정의한  `Version 0` 쿠키와, 그것의 확장으로 더 널리 사용되고있는 `Version 1` 쿠키가 있다. **(O / X)** 
+
+   
+
+2. 아래 보기는 `Version 0` 쿠키의 `Set-Cookie` 응답 헤더를 조작하기 위한 필드들이다. 올바른 형태로 Set-Cookie 헤더를 기술하시오.
+
+   보기 : ( *domain=domain, name=value, secure, path=path, expires=date* )  
+
+   **Set-Cookie: `__(a)__` ; `__(b)__` ; `__(c)__` ; `__(d)__` ; `__(e)__`** 
+
+   
+
+3. `Version 0` 쿠키에서, 모든 쿠기는 `Cookie` 요청 헤더에 한데 이어 붙여 보낸다. **(O / X)**
+
+   
+
+4. `Version 1(RFC2965)` 쿠키는 `Set-Cookie2` 헤더와 `Cookie2` 헤더를 사용하며, Version 0 시스템과 호환되지 않는다. **(O / X)**
 <details>
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
 <div markdown="1">
   
-- 여기에
-- 해설을 작성해주세요
+1. 현재 사용되는 쿠키 명세에는 넷스케이프가 최초로 정의한  `Version 0` 쿠키와, 그것의 확장으로 더 널리 사용되고있는 `Version 1` 쿠키가 있다. **(O / X)** 
+
+   > 정답 : X
+   >
+   >  `version 1` 쿠키(RFC2965)는 `Version 0` 쿠키의 확장이지만 **널리 쓰이지는 않는다**. `version 1` 쿠키는 2011년에 나온 RFC6265 "HTTP State Management Mechanism"에 의해 폐기되었다.
+
+   > ## RFC6265와 표준 스펙 문서화
+   >
+   > ![쿠키의 역사](https://image.toast.com/aaaadh/real/2019/techblog/1%2821%29.png)
+   >
+   > 기나긴 우여곡절 끝에 HTML5 시대가 도래했고, 새로운 스펙을 강제하는 것을 포기한 [RFC6265](https://www.ietf.org/rfc/rfc6265.txt)가 2011년에 발표되었습니다. RFC6265는 이전 시도들과는 달리 새로운 기능을 제시하기보다는 상용화되어있던 브라우저와 웹 서버들의 관행을 문서화하는 데에 집중했습니다. 새로운 시스템들이 현 웹 환경에 맞게 개발될 수 있도록 가이드를 한 것입니다. RFC6265는 현실과 가장 부합하는 HTTP 표준으로 생각되고 있으며 현재 많은 애플리케이션들과 브라우저들이 RFC6265를 받아들이고 있는 상태입니다. 
+   >
+   > 현재는 아직도 넷스케이프가 제시한 V0의 쿠키들이 굉장히 많이 사용되고 있지만, 점점 기술 표준은 RFC6265를 향해 변화해 가고 있습니다. 많은 개발자들의 애플리케이션을 지탱하고 있는 톰캣과 같은 소프트웨어가 RFC6265를 점차 기본값으로 채택함에 따라 레거시 스펙의 HTTP 쿠키와 RFC6265 스펙의 쿠키의 차이점에 대해 아는 것이 미래에 큰 도움이 될 것이라 생각합니다.
+   >
+   > [출처](https://meetup.toast.com/posts/209)
+
+2. 아래 보기는 `Version 0` 쿠키의 `Set-Cookie` 응답 헤더를 조작하기 위한 필드들이다. 올바른 형태로 Set-Cookie 헤더를 기술하시오.
+
+   보기 : ( *domain=domain, name=value, secure, path=path, expires=date* )  
+
+   **Set-Cookie: `__(a)__` ; `__(b)__` ; `__(c)__` ; `__(d)__` ; `__(e)__`** 
+
+   > 정답:
+   >
+   > ```http
+   > Set-Cookie: name=value [; expire=date] [; path=path] [; domain=domain] [;secure]
+   > ```
+
+   > 예시: 
+   >
+   > ```http
+   > Set-Cookie: private_id=taelee; expire=Wednesday, 23-Nov-20 23:12:40 GMT; domain="yebalja.com"; path=/admin; secure
+   > ```
+   >
+   > - `Secure` 속성이 포함되어 있으면, 쿠키는 HTTP가 SSL 연결을 사용할 때만 쿠키를 전송한다.
+
+3. `Version 0` 쿠키에서, 모든 쿠기는 `Cookie` 요청 헤더에 한데 이어 붙여 보낸다. **(O / X)**
+
+   > 정답: O
+   >
+   > 클라이언트가 서버에 요청을 보낼 때는, `Domain`, `Path`, `Secure` 필터들이 현재 요청하려고 하는 사이트에 들어맞으면서 아직 파기되지 않은 쿠키들을 함께 보낸다. 모든 쿠키는 `Cookie` 헤더에 이어 붙여 보낸다.
+
+4. `Version 1(RFC2965)` 쿠키는 `Set-Cookie2` 헤더와 `Cookie2` 헤더를 사용하며, Version 0 시스템과 호환되지 않는다. **(O / X)**
+
+   > 정답: X
+   >
+   > version 0 시스템과도 호환된다. 그러나 2011년부터 폐기되어 더이상 사용되지 않음.
+
+   > ## Version 0,1 쿠키 vs RFC6265 쿠키
+   >
+   > |  쿠키   |   버전 속성   |     Set-cookie 헤더     |          만료 메커니즘           |      도메인 속성      |      쿠키 name,value 제한사항      |                      쿠키값                      |
+   > | :-----: | :-----------: | :---------------------: | :------------------------------: | :-------------------: | :--------------------------------: | :----------------------------------------------: |
+   > | 레거시  | Version=0, 1  | Set-cookie, Set-cookie2 |      max-age, expires 혼용       |     `.`으로 시작      | name,value 모두 HTTP/1.1 token형식 | name=이후의 token형식 value 또는 `"`로 감싸진 값 |
+   > | RFC6265 | 사용하지 않음 |       Set-cookie        | max-age가 있을 경우 expires 무시 | `.`으로 시작하지 않음 |     name만 HTTP/1.1 token 형식     |            첫 `=`와 첫 `;`사이의 문자            |
+   >
+   > [출처 및 보다 자세한 내용](https://meetup.toast.com/posts/209) 
 
 </div>
 </details>
