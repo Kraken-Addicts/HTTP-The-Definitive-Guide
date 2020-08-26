@@ -127,8 +127,7 @@ OAuth 2.0은 다양한 플랫폼 환경에서 권한 부여를 위한 산업 표
 
    >  왜인지 8의 배수는 안 적혀있지만 그냥 대응되는 알파벳을 사용하시면 됩니다. 예시) 숫자 8에 해당되는 알파벳은 H의 다음인 I입니다.
 
-   ![image-20200827001955209](/Users/jehong/Library/Application Support/typora-user-images/image-20200827001955209.png)
-
+   ![](https://images.velog.io/images/jehjong/post/06badca3-084e-4522-b012-d141dd36cae6/image.png)
 
 
 <br>
@@ -219,7 +218,7 @@ OAuth 2.0은 다양한 플랫폼 환경에서 권한 부여를 위한 산업 표
 
    >  왜인지 8의 배수는 안 적혀있지만 그냥 대응되는 알파벳을 사용하시면 됩니다. 예시) 숫자 8에 해당되는 알파벳은 H의 다음인 I입니다.
 
-   ![image-20200827001955209](/Users/jehong/Library/Application Support/typora-user-images/image-20200827001955209.png)
+   ![](https://images.velog.io/images/jehjong/post/06badca3-084e-4522-b012-d141dd36cae6/image.png)
 
 ![](https://images.velog.io/images/jehjong/post/6e4221c8-0cff-4b94-bdd2-f41fcec44f51/image.png)
 
