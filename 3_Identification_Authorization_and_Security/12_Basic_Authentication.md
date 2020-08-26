@@ -14,7 +14,9 @@ HTTP의 네 가지 인증단계입니다 빈칸을 적절하게 채워주세요.
 
 HTTP가 리소스마다 다른 접근 조건을 다루기 위해서 `______`지시자를 기술한다.
 
-
+<br>
+<br>
+<br>
 
 [다푸셨으면 OAuth에 대해 잠깐 알아볼까요](https://interconnection.tistory.com/76)
 
