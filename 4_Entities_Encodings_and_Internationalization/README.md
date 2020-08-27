@@ -23,7 +23,7 @@
 
 <br>
 
-## [17장](./17_Content_Negotiation_anf_Transcoding.md) :octopus: 내용 협상과 트랜스코딩
+## [17장](./17_Content_Negotiation_and_Transcoding.md) :octopus: 내용 협상과 트랜스코딩
 - __17.1__ 　  내용 협상 기법　 ` `
 - __17.2__ 　  클라이언트 주도 협상　 ` `
 - __17.3__ 　  서버 주도 협상　 ` `
