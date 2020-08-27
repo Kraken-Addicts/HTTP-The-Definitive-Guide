@@ -28,7 +28,7 @@
   | [__4부 엔터티, 인코딩, 국제화__](https://github.com/Kraken-Addicts/HTTP-The-Definitive-Guide/tree/master/4_Entities_Encodings_and_Internationalization) | 　 | 　 | 　 |
   |  |  [__15장__](./4_Entities_Encodings_and_Internationalization/15_Entities_and_Encodings.md) 엔터티와 인코딩 | 09/08 (화) | 　 |
   |  |  [__16장__](./4_Entities_Encodings_and_Internationalization/16_Internationalization.md) 국제화 | 09/10 (목) | 　 |
-  |  |  [__17장__](./4_Entities_Encodings_and_Internationalization/(17_Content_Negotiation_and_Transcoding.md)) 내용 협상과 트랜스코딩 | 09/15 (화) | 　 |
+  |  |  [__17장__](./4_Entities_Encodings_and_Internationalization/17_Content_Negotiation_and_Transcoding.md) 내용 협상과 트랜스코딩 | 09/15 (화) | 　 |
   |||||
   | [__5부 콘텐츠 발행 및 배포__](https://github.com/Kraken-Addicts/HTTP-The-Definitive-Guide/tree/master/5_Content_Publishing_and_Distribution) | 　 | 　 | 　 |
   |  |  [__18장__](./5_Content_Publishing_and_Distribution/18_Web_Hosting.md) 웹 호스팅 | 09/17 (목) | 　 |
