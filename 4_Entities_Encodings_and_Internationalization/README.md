@@ -16,18 +16,20 @@
 ## [16장](./16_Internationalization.md) :octopus: 국제화
 - __16.1__ 　  국제적인 콘텐츠를 다루기 위해 필요한 HTTP 지원　 `secho`
 - __16.2__ 　  문자집합과 HTTP 　 `secho`
-- __16.3__ 　  다중언어 무자 인코딩에 대한 지침　 `jehong`
-- __16.4__ 　  언어 태그와 HTTP　 `taelee`
-- __16.5__ 　  국제화된 URI　 `yeosong`
-- __16.6__ 　  기타 고려사항　 `yeosong`
+- __16.3__ 　  다중언어 문자 인코딩에 대한 지침
+    - __16.3.1~4__　 `jehong`
+    - __16.3.5~6__　 `taelee`
+- __16.4__ 　  언어 태그와 HTTP　 `yeosong`
+- __16.5__ 　  국제화된 URI　 `hylee`
+- __16.6__ 　  기타 고려사항　 `hylee`
 
 <br>
 
 ## [17장](./17_Content_Negotiation_and_Transcoding.md) :octopus: 내용 협상과 트랜스코딩
-- __17.1__ 　  내용 협상 기법　 `hylee`
-- __17.2__ 　  클라이언트 주도 협상　 `hylee`
-- __17.3__ 　  서버 주도 협상　 `hylee`
-- __17.4__ 　  투명 협상 `kukim`
-- __17.5__ 　  트랜스코딩 `junslee`
-- __17.6__ 　  다음 단계　 `junslee`
+- __17.1__ 　  내용 협상 기법　 `kukim`
+- __17.2__ 　  클라이언트 주도 협상　 `kukim`
+- __17.3__ 　  서버 주도 협상　 `kukim`
+- __17.4__ 　  투명 협상 `junslee`
+- __17.5__ 　  트랜스코딩 `mihykim`
+- __17.6__ 　  다음 단계　 `mihykim`
 <br>
