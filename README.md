@@ -21,7 +21,7 @@
   |||||
   | [__3부 식별, 인가, 보안__](https://github.com/Kraken-Addicts/HTTP-The-Definitive-Guide/tree/master/3_Identification_Authorization_and_Security) | 　 | 　 | 　 |
   |  |  [__11장__](./3_Identification_Authorization_and_Security/11_Client_Identification_and_Cookies.md) 클라이언트 식별과 쿠키 | 08/25 (화) | 🌱 |
-  |  |  [__12장__](./3_Identification_Authorization_and_Security/12_Basic_Authentication.md) 기본 인증 | 08/27 (목) | 🌱　 |
+  |  |  [__12장__](./3_Identification_Authorization_and_Security/12_Basic_Authentication.md) 기본 인증 | 08/27 (목) |  🌱  |
   |  |  [__13장__](./3_Identification_Authorization_and_Security/13_Digest_Authentication.md) 다이제스트 인증 | 09/01 (화) | 　 |
   |  |  [__14장__](./3_Identification_Authorization_and_Security/14_Secure_HTTP.md) 보안 HTTP | 09/03 (목) | 　 |
   |||||
