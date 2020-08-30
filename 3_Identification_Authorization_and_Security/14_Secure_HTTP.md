@@ -84,7 +84,7 @@
 </details>
 <br>
 
-### __14.7__ 　 HTTPS의 세부사항　 `secho`
+### __14.7__ 　 HTTPS의 세부사항　 `hylee`
 - 여기에
 - 문제를 작성해주세요
 <details>
