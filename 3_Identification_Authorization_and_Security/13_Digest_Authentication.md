@@ -28,7 +28,7 @@
 </details>
 <br>
 
-### __13.3__ 　 보호 수준(Quality of Protection) 향상　 `hylee`
+### __13.3__ 　 보호 수준(Quality of Protection) 향상　 `secho`
 - 여기에
 - 문제를 작성해주세요
 <details>
@@ -42,7 +42,7 @@
 </details>
 <br>
 
-### __13.4__ 　 실제 상황에 대한 고려　 `hylee`
+### __13.4__ 　 실제 상황에 대한 고려　 `secho`
 - 여기에
 - 문제를 작성해주세요
 <details>
