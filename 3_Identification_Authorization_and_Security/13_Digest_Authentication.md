@@ -151,7 +151,7 @@
 
   난스는 어떻게 구현하는가에 따라 성능 수준, 보안, 편의성이 크게 달라진다.
 
-  RFC 7616은 다음과 같은 가상의 난스 공식을 제안한다.
+  [RFC7616](https://www.rfc-editor.org/rfc/rfc7616.txt)은 다음과 같은 가상의 난스 공식을 제안한다.
 
   BASE64(time-stamp H(time-stamp ":" ETag ":" secret-data))
 
@@ -324,7 +324,7 @@ qop = "auth-int" 일 경우         MD5(MD5(A1):<난스>:<c난스>:<qop>:MD5(A2)
 
 - 난스는 어떻게 구현하는가에 따라 성능 수준, 보안, 편의성이 크게 달라진다.
 
-  RFC 7616은 다음과 같은 가상의 난스 공식을 제안한다.
+  [RFC7616](https://www.rfc-editor.org/rfc/rfc7616.txt)은 다음과 같은 가상의 난스 공식을 제안한다.
 
   BASE64(time-stamp H(time-stamp ":" ETag ":" secret-data))
 
