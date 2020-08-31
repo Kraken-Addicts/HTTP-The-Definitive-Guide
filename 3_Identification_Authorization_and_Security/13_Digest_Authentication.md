@@ -306,7 +306,7 @@ qop = "auth-int" 일 경우         MD5(MD5(A1):<난스>:<c난스>:<qop>:MD5(A2)
 
 #### 5) [제한된 난스 재사용]은 어떤 단점이 있을까? (주관식)
 
-- [앞에서 본 긴 커넥션의 보안 이슈](../../2_HTTP_Architecture/10_HTTP.md#104---알려진-보안-이슈-kukim)와 마찬가지로, `연결 시간이 길어질수록 공격의 성공률은 높아진다.` 여기서 공격은 재전송 공격(Replay Attack)을 말한다.
+- [앞에서 본 긴 커넥션의 보안 이슈](https://github.com/Kraken-Addicts/HTTP-The-Definitive-Guide/blob/master/2_HTTP_Architecture/10_HTTP.md#104---알려진-보안-이슈-kukim)와 마찬가지로, `연결 시간이 길어질수록 공격의 성공률은 높아진다.` 여기서 공격은 재전송 공격(Replay Attack)을 말한다.
   - `카운터 증가`(송신 메시지에 매회 1씩 증가하는 번호를 함께 전달), `IP 주소 검사` 등으로 재전송 공격을 어렵게 만들 수는 있지만 근본적인 취약점을 제거하는 해결법은 아니다.
 
 
