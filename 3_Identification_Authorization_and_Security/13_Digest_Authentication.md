@@ -15,6 +15,7 @@
 <details>
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
 <div markdown="1">
+  
 ##### 1. 다이제스트 인증은 기본 인증을 대체하기 위해 설계되어 기본 인증보다 훨씬 강력하다(O)
 
 
