@@ -302,13 +302,67 @@
 
 ### __14.8__ 　 진짜 HTTPS 클라이언트　 `jehong`
 - 여기에
-- 문제를 작성해주세요
+#### 다음 보기를 참고해서 빈칸을 채우세요.
+
+> 중복 가능
+>
+> 숫자는 보기에 없음
+>
+> 문제가 그림과 관련이 없을 수도 있음
+
+
+![](https://images.velog.io/images/jehjong/post/bdd93fe7-64d7-4d68-aa9b-0d0b17941aec/image.png)
+
+
+> **<보기>**
+>
+> `gethostbyname()`, `SSL_connect()`, `SSL_set_fd()`,  `SSL_new()`, `SSL_write`,  `DES-CBC3-MD5`, `RSA Data Security`, `보안`, `clients1.online.msdw.com`, `TCP 커넥션`, `IP주소`, `OpenSSL`
+
+ 
+
+1. `_____________` 은/는 SSL 클라이언트와 서버 프로그래밍을 쉽게 만들어주는, SSL과 TLS의 가장 인기 있는 오픈 소스 구현이다. 
+2. 위에서 요청에 대응하는 호스트 명은 `_____________` 이다.
+3. 2)번의 IP 주소는 `_____________` 함수를 이용해 입력 호스트 명을 변환한 것이다.
+4. `__`(숫자) 단계가 완료된 후 SSL 커넥션으로 보안 데이타 전송을 할 준비가 된다.
+5. SSL 핸드셰이크는 SSL 스택을 소켓에 붙이고 `_____________` 를 호출해 수행된다.
+6. 클라이언트와 서버는 `_____________` 대량 암호화 암호를 쓰는 것으로 합의했다. 
+7. 위에서 발급된 인증서는 `_____________` 에 의해 승인되었다.
+8. OpenSSL이 아닌 진짜 SSL 애플리케이션은 `__`(숫자) 단계에서 인증서에 대한 기본적인 검사를 한다.
+9. 7번은 한번 SSL 채널이 수립된 후 클라이언트가 `_____________` 채널을 통해 보낸 자신의 HTTP 요청이다.
+
+
+
 <details>
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
 <div markdown="1">
-  
-- 여기에
-- 해설을 작성해주세요
+
+#### 다음 보기를 참고해서 빈칸을 채우세요.
+
+> 중복 가능
+>
+> 숫자는 보기에 없음
+>
+> 문제가 그림과 관련이 없을 수도 있음
+
+
+![](https://images.velog.io/images/jehjong/post/bdd93fe7-64d7-4d68-aa9b-0d0b17941aec/image.png)
+
+
+> **<보기>**
+>
+> `gethostbyname()`, `SSL_connect()`, `SSL_set_fd()`,  `SSL_new()`, `SSL_write`,  `DES-CBC3-MD5`, `RSA Data Security`, `보안`, `clients1.online.msdw.com`, `TCP 커넥션`, `IP주소`, `OpenSSL`
+
+ 
+
+1. `OpenSSL` 은/는 SSL 클라이언트와 서버 프로그래밍을 쉽게 만들어주는, SSL과 TLS의 가장 인기 있는 오픈 소스 구현이다. 
+2. 위에서 요청에 대응하는 호스트 명은 `clients1.online.msdw.com` 이다.
+3. 2)번의 IP 주소는 `gethostbyname()` 함수를 이용해 입력 호스트 명을 변환한 것이다.
+4. `6`(숫자) 단계가 완료된 후 SSL 커넥션으로 보안 데이타 전송을 할 준비가 된다.
+5. SSL 핸드셰이크는 SSL 스택을 소켓에 붙이고 `SSL_connect()` 를 호출해 수행된다.
+6. 클라이언트와 서버는 `DES-CBC3-MD5` 대량 암호화 암호를 쓰는 것으로 합의했다. 
+7. 위에서 발급된 인증서는 `RSA Data Security` 에 의해 승인되었다.
+8. OpenSSL이 아닌 진짜 SSL 애플리케이션은 `6`(숫자) 단계에서 인증서에 대한 기본적인 검사를 한다.
+9. 7번은 한번 SSL 채널이 수립된 후 클라이언트가 `보안` 채널을 통해 보낸 자신의 HTTP 요청이다.
 
 </div>
 </details>
