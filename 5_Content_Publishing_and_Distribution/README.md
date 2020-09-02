@@ -31,7 +31,7 @@
 - __20.9__ 　  하이퍼텍스트 캐싱 프로토콜　 `kukim`
 <br>
 
-## [21장](./21_Logging_and_Usage_Tracking.md) :octopus: 내용 협상과 트랜스코딩
+## [21장](./21_Logging_and_Usage_Tracking.md) :octopus: 로깅과 사용추적
 - __21.1__ 　  로그란 무엇인가?　 `junslee`
 - __21.2__ 　  로그 포맷　 `junslee`
     - __21.2.1~2__　 `junslee`
