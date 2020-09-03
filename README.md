@@ -23,7 +23,7 @@
   |  |  [__11장__](./3_Identification_Authorization_and_Security/11_Client_Identification_and_Cookies.md) 클라이언트 식별과 쿠키 | 08/25 (화) | 🌱 |
   |  |  [__12장__](./3_Identification_Authorization_and_Security/12_Basic_Authentication.md) 기본 인증 | 08/27 (목) |  🌱  |
   |  |  [__13장__](./3_Identification_Authorization_and_Security/13_Digest_Authentication.md) 다이제스트 인증 | 09/01 (화) | 🌱 |
-  |  |  [__14장__](./3_Identification_Authorization_and_Security/14_Secure_HTTP.md) 보안 HTTP | 09/03 (목) | 　 |
+  |  |  [__14장__](./3_Identification_Authorization_and_Security/14_Secure_HTTP.md) 보안 HTTP | 09/03 (목) | 🌱 |
   |||||
   | [__4부 엔터티, 인코딩, 국제화__](https://github.com/Kraken-Addicts/HTTP-The-Definitive-Guide/tree/master/4_Entities_Encodings_and_Internationalization) | 　 | 　 | 　 |
   |  |  [__15장__](./4_Entities_Encodings_and_Internationalization/15_Entities_and_Encodings.md) 엔터티와 인코딩 | 09/08 (화) | 　 |
@@ -32,9 +32,8 @@
   |||||
   | [__5부 콘텐츠 발행 및 배포__](https://github.com/Kraken-Addicts/HTTP-The-Definitive-Guide/tree/master/5_Content_Publishing_and_Distribution) | 　 | 　 | 　 |
   |  |  [__18장__](./5_Content_Publishing_and_Distribution/18_Web_Hosting.md) 웹 호스팅 | 09/17 (목) | 　 |
-  |  |  [__19장__](./5_Content_Publishing_and_Distribution/19_Publishing_Systems.md) 배포 시스템 | 09/22 (화) | 　 |
-  |  |  [__20장__](./5_Content_Publishing_and_Distribution/20_Redirection_and_Load_Balancing.md) 리다이렉션과 부하 균형 | 09/24 (목) | 　 |
-  |  |  [__21장__](./5_Content_Publishing_and_Distribution/21_Logging_and_Usage_Tracking.md) 로깅과 사용 추적 | 09/29 (화) | 　 |
+  |  |  [__20장__](./5_Content_Publishing_and_Distribution/20_Redirection_and_Load_Balancing.md) 리다이렉션과 부하 균형 | 09/17 (목) | 　 |
+  |  |  [__21장__](./5_Content_Publishing_and_Distribution/21_Logging_and_Usage_Tracking.md) 로깅과 사용 추적 | 09/17 (목) | 　 |
 
 <br>
 
