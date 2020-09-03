@@ -13,7 +13,7 @@
 - __20.3__ 　  리다이렉션 프로토콜의 개요　 `jehong`
 - __20.4__ 　  일반적인 리다이렉션 방법
     - __20.4.1~2__　 `taelee`
-    - __20.4.3~2__　 `yeosong`
+    - __20.4.3~6__　 `yeosong`
 <br>
 
 ## [21장](./21_Logging_and_Usage_Tracking.md) :octopus: 로깅과 사용추적
