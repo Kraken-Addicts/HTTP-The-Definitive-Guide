@@ -318,7 +318,7 @@
 > 문제가 그림과 관련이 없을 수도 있음
 
 
-<img src="https://images.velog.io/images/jehjong/post/bdd93fe7-64d7-4d68-aa9b-0d0b17941aec/image.png" style="zoom:40%;" />
+<img src="https://images.velog.io/images/jehjong/post/bdd93fe7-64d7-4d68-aa9b-0d0b17941aec/image.png" width="650" />
 
 
 > **<보기>**
@@ -352,7 +352,7 @@
 > 문제가 그림과 관련이 없을 수도 있음
 
 
-<img src="https://images.velog.io/images/jehjong/post/bdd93fe7-64d7-4d68-aa9b-0d0b17941aec/image.png" style="zoom:40%;" />
+<img src="https://images.velog.io/images/jehjong/post/bdd93fe7-64d7-4d68-aa9b-0d0b17941aec/image.png" width="650" />
 
 
 > **<보기>**
