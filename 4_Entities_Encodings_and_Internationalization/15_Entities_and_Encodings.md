@@ -91,8 +91,7 @@
 - 수신 측 프로그램은 인코딩된 메시지를 받아 `_______`하고 원본을 얻는다.
 
 2. 인코딩된 메시지는 Content_Type과 Content_Length가 이전과 같다. (O / X)
-
-3. 
+ 
 <img src="https://postfiles.pstatic.net/MjAyMDA0MjVfNzEg/MDAxNTg3NzgxNzM0ODA5.bASW0WINsL0k8_xqPCI8Lj7l-3mEoHN0vaRmfIiIZggg.JB_M4JBGhJWGyH_Da3BX9OgnIxo0SOdhls7bcMpKAsAg.JPEG.dlaxodud2388/1587781732919.jpg?type=w580" width="400" height="200"><br>
 3-1. 위의 Content-Type헤더는 생략이 가능하다. (O / X)<br>
 3-2. 위의 Content_Length값인 7023은 `인코딩된 본문/ 디코딩된 본문`의 길이이다.<br> 
