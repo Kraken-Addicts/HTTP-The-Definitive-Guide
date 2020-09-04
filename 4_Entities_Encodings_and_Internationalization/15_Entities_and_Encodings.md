@@ -167,7 +167,7 @@
 
 ### __15.8__ 　  검사기와 신선도　 `mihykim`
 
-<p align="center"><img src="https://user-images.githubusercontent.com/60066472/92241624-80006b80-eef9-11ea-9b6c-60f3e5d56e3c.png" width="750"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/60066472/92241624-80006b80-eef9-11ea-9b6c-60f3e5d56e3c.png" width="650"></p>
 
 - __잘나가는 캐시프락시서버 ‘현준’ 은 오늘도 수많은 클라이언트의 요청을 처리하느라 바쁘다고 합니다. <br> 다음은 ‘현준’ 의 업무처리 계획입니다. 누구의 업무를 처리하려고 하는 것인지 맞춰보세요.__
 
@@ -175,7 +175,7 @@
     - __객관식 2 ★__ “`ㅇㅇ`님은 많이 급하신가? 신선하지 않게된 지 하루 지난 사본도 괜찮다고 하셨네? 얼른 보내드려야지!”
     - __객관식 3 ★__ “`ㅇㅇ`님은 꼭 나한테서 찾고싶으신거구나! ‘태혁’님께 따로 여쭤볼 필요가 없겠어~”
   
-<p align="center"><img src="https://user-images.githubusercontent.com/60066472/92244093-69f4aa00-eefd-11ea-81d5-b2aec2ba9cf3.png" width="750"></p>
+<p align="center"><img src="https://user-images.githubusercontent.com/60066472/92244093-69f4aa00-eefd-11ea-81d5-b2aec2ba9cf3.png" width="650"></p>
 
 - __점점 더 똑똑해지는 클라이언트들은 자신이 원하는 리소스를 '조건부'로 요청하기 시작했습니다.__
 
