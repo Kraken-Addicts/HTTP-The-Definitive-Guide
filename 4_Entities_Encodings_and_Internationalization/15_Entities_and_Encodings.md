@@ -82,15 +82,42 @@
 <br>
 
 ### __15.5__ 　  콘텐츠 인코딩　 `junslee`
-- 여기에
-- 문제를 작성해주세요
+
+1. 다음은 콘텐츠 인코딩 과정을 순서에 따라 나열한 것입니다. 빈칸을 채워주세요.<br>
+
+- 웹서버가 원본 'Content-Type'헤더와 `________________`헤더를 수반한 원본 응답 메시지를 생성한다.
+- 콘텐츠 인코딩 서버(원 서버 또는 다운스트림 프락시 서버)가 `_______`된 메시지를 생성한다
+- 콘텐츠 인코딩 서버는 `_________________`헤더를 인코딩된 메시지에 추가하여 수신하는 애플리케이션이 그것을 디코딩하도록 해준다.
+- 수신 측 프로그램은 인코딩된 메시지를 받아 `_______`하고 원본을 얻는다.
+
+2. 인코딩된 메시지는 Content_Type과 Content_Length가 이전과 같다. (O / X)
+
+3. 
+<img src="https://postfiles.pstatic.net/MjAyMDA0MjVfNzEg/MDAxNTg3NzgxNzM0ODA5.bASW0WINsL0k8_xqPCI8Lj7l-3mEoHN0vaRmfIiIZggg.JB_M4JBGhJWGyH_Da3BX9OgnIxo0SOdhls7bcMpKAsAg.JPEG.dlaxodud2388/1587781732919.jpg?type=w580" width="400" height="200"><br>
+3-1. 위의 Content-Type헤더는 생략이 가능하다. (O / X)<br>
+3-2. 위의 Content_Length값인 7023은 `인코딩된 본문/ 디코딩된 본문`의 길이이다.<br> 
+3-3. 위의 Content_Encoding의 'gzip'은 엔터티에 GNU zip 인코딩이 적용되었음을 의미한다. 일반적으로 가장 효율적이고 널리 쓰이는 압축 알고리즘이다. (O / X) 
+
+4. 서버에서 클라이언트가 지원하지 않는 인코딩을 사용하는 것을 막기 위해, 클라이언트는 자신이 지원하는 인코딩 목록을 어떤 헤더를 통해 전달할까요?
+ 
+
 <details>
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
 <div markdown="1">
+  1. Content_Length, 인코딩, Content_Encoding, 디코딩<br><br>
   
-- 여기에
-- 해설을 작성해주세요
-
+  2. 인코딩된 메시지는 Content_Type과 Content_Length가 이전과 같다. (X)<br>
+  => 인코딩된 메시지는 인코딩된 메시지와 Content-Type는 같지만 (압축같은 것이 되었다면)Content-Length는 다르다.<br>
+  
+  3-1. 위의 Content-Type헤더는 생략이 가능하다. (X)<br>
+  => Content-Type헤더는 디코딩된 엔터티를 보여주기 위해 필요한 정보이므로 메시지에 존재할 수 있고 또 그래야 한다.
+  
+  3-2. 위의 Content_Length값인 7023은 `디코딩된 본문`의 길이이다.<br>
+  
+  3-3. 위의 Content_Encoding의 'gzip'은 엔터티에 GNU zip 인코딩이 적용되었음을 의미한다. 일반적으로 가장 효율적이고 널리 쓰이는 압축 알고리즘이다. (O)<br>
+  
+  4. Accept-Encoding
+  
 </div>
 </details>
 <br>
