@@ -95,7 +95,7 @@
 <img src="https://postfiles.pstatic.net/MjAyMDA0MjVfNzEg/MDAxNTg3NzgxNzM0ODA5.bASW0WINsL0k8_xqPCI8Lj7l-3mEoHN0vaRmfIiIZggg.JB_M4JBGhJWGyH_Da3BX9OgnIxo0SOdhls7bcMpKAsAg.JPEG.dlaxodud2388/1587781732919.jpg?type=w580" width="400" height="200"><br>
 3-1. 위의 Content-Type헤더는 생략이 가능하다. (O / X)<br>
 3-2. 위의 Content_Length값인 7023은 `인코딩된 본문/ 디코딩된 본문`의 길이이다.<br> 
-3-3. 위의 Content_Encoding의 'gzip'은 엔터티에 GNU zip 인코딩이 적용되었음을 의미한다. 일반적으로 가장 효율적이고 널리 쓰이는 압축 알고리즘이다. (O / X) 
+3-3. 위의 Content_Encoding의 'gzip'은 엔터티에 GNU zip 인코딩이 적용되었음을 의미한다. (O / X) 
 
 4. 서버에서 클라이언트가 지원하지 않는 인코딩을 사용하는 것을 막기 위해, 클라이언트는 자신이 지원하는 인코딩 목록을 어떤 헤더를 통해 전달할까요?
  
