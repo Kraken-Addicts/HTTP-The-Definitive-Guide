@@ -38,7 +38,7 @@
 </details>
 <br>
 
-### __15.2__ 　  Content-Length: 엔터티의 길이　 `secho`
+### __15.2__ 　  Content-Length: 엔터티의 길이　 `hylee`
 - 여기에
 - 문제를 작성해주세요
 <details>
