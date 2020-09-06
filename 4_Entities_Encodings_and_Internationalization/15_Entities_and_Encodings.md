@@ -159,7 +159,7 @@
 
 ### __15.4__ 　  미디어 타입과 차셋(Charset)　 `kukim`
 1. Content-Type 헤더 필드는 엔터티 본문의 `(  )` 타입을 기술한다.
-2. 엔터티가 콘텐츠 인코딩을 거친 경우에는 이미 미디어 타입과 상관없이 어떤 방법으로 인코딩 했는지 명시한다면 Content-Type 헤더를 명시할 필요가 없다. (O / X)
+2. 엔터티가 콘텐츠 인코딩을 거친 후 어떤 방법으로 인코딩 했는지 명시한다면 Content-Type 헤더를 명시할 필요가 없다. (O / X)
 3. Content-Type 헤더는 내용 유형을 자세히 지정하기 위해 매개변수도 지원한다. ( O / X)
 4. HTTP는 본문 메시지 콘텐츠를 보낼 때 한 번에 하나의 데이터 폼만 전송 할 수 있다. (O / X)
 5. 다음 괄호를 채우시오
@@ -191,7 +191,7 @@ and that government of the people, by the people, for the people shall not peris
   
 1. Content-Type 헤더 필드는 엔터티 본문의 `(  )` 타입을 기술한다.
   - MIME(Multipurpose Internet Mail Extensions)
-2. 엔터티가 콘텐츠 인코딩을 거친 경우에는 이미 미디어 타입과 상관없이 어떤 방법으로 인코딩 했는지 명시한다면 Content-Type 헤더를 명시할 필요가 없다. (O / X)
+2. 엔터티가 콘텐츠 인코딩을 거친 후 어떤 방법으로 인코딩 했는지 명시한다면 Content-Type 헤더를 명시할 필요가 없다. (O / X)
   - X, Content-Type 헤더가 원본 엔터티 본문의 미디어 타입을 명시해야 한다.
 3. Content-Type 헤더는 내용 유형을 자세히 지정하기 위해 매개변수도 지원한다. ( O / X)
   - O : Content-Type: text/html; charset=iso-8859- 4 처럼 인코딩 버전도 입력할 수 있다.
