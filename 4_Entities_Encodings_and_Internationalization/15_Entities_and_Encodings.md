@@ -40,15 +40,95 @@
 <br>
 
 ### __15.2__ 　  Content-Length: 엔터티의 길이　 `hylee`
-- 여기에
-- 문제를 작성해주세요
+
+1. HTTP 스터디 이후 Content- Length 헤더에 대해 얘기하는데 큰일날 사람을 모두 골라주세요
+
+      새초 : Content- Length 헤더는 메시지의 엔터티 본문의 크기를 비트단위로 나타낸다.
+
+      태리 : 압축 된 파일을 보낼 때 Content- Length 헤더에는 압축 되기 전 원본 크기로 표현해서 보내야된다.
+
+      쿠킴 : Content- Length 헤더를 이용해서 서버 충돌로 인해 메시지가 잘렸는지 감지할 수 있다.
+
+      준서 : 엔터티 본문을 포함한 메시지에서는 필수적으로 있어야 된다.
+
+      여름 : 커넥션을 공유하는 메시지를 올바르게 분할할 때 필요하다.
+<br>
+  
+2. 엔터티 본문 길이 판별을 위한 규칙을 위해 아래 규칙들을 알맞은 우선 순위로 배열해주세요
+
+  
+    (a) 메시지가 Transfer-Encoding 헤더를 포함하고 있는지 확인한다.
+  
+    (b) 본문을 갖는 것이 허용되지 않는 특정 타입의 HTTP 메시지인지 확인한다.
+
+    (c) 메시지가 Content- Length 헤더를 갖는지 확인해본다.
+  
+  
+<br>
+
+  
+3. HTTP/ 1.1 명세는 요청에 본문은 있지만 Content-Length 헤더는 없는 경우, 
+   메시지의 길이를 판별할 수 없다면 _______ 응답을 보내고 
+   유효한 Content- Length를 요구하고 싶다면  _________ 응답을 보내라고 조언하고 있다.
+   
+   `<보기>`<br> `400 Bad Request`, `404 Not Found`, `405 Method Not Allowd`,<br> `410 Content Required`, `411 Length Required`, `418 I'm a teapot`
+
+
+  
 <details>
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
-<div markdown="1">
+<div markdown="1"> 
   
-- 여기에
-- 해설을 작성해주세요
+1. HTTP 스터디 이후 Content- Length 헤더에 대해 얘기하는데 큰일날 사람을 모두 골라주세요
+      > 정답 : 새초, 태리, 준서
 
+      새초 : Content- Length 헤더는 메시지의 엔터티 본문의 크기를 <b>`바이트단위`</b> 로 나타낸다.
+
+      태리 : 압축 된 파일을 보낼 때 Content- Length 헤더에는 <b>`압축 된 후`</b> 크기로 표현해서 보내야된다.
+
+      쿠킴 : Content- Length 헤더를 이용해서 서버 충돌로 인해 메시지가 잘렸는지 감지할 수 있다.
+
+      준서 : Content- Length 헤더는 <b>`메시지를 청크 인코딩으로 전송하지 않는 이상`</b>엔터티 본문을 포함한 메시지에서는 필수적으로 있어야 된다.
+
+      여름 : Content- Length 헤더는 커넥션을 공유하는 메시지를 올바르게 분할할 때 필요하다.
+      
+ <br>
+
+  
+2. 엔터티 본문 길이 판별을 위한 규칙을 위해 아래 규칙들을 알맞은 우선 순위로 배열해주세요
+
+    > 정답 : (b) -> (a) ->(c)
+    
+    (b) 본문을 갖는 것이 허용되지 않는 특정 타입의 HTTP 메시지인지 확인한다.
+    
+        본문을 갖는 것이 허용되지 않는 특정 타입의 HttP 메시지에서는, 본문 계산을위한 Content-Length 헤더가 무시된다.
+        이 경우 Content-Length 헤더는 부가정보에 불과하며, 실제 본문 길이를 서술하지 않기 때문이다.
+        그렇기 때문에 본문을 갖는 것이 허용되지 않는 특정 타입의 HTTP 메시지인지를 Content- Length 헤더보다 먼저 검사한다.
+       
+    (a) 메시지가 Transfer-Encoding 헤더를 포함하고 있는지 확인한다.
+
+        Transfer-Encoding 헤더 필드를 갖고 있는 메시지를 받았다면 반드시 Content- Length 헤더를 무시해야 한다.
+        왜냐하면 전송 인코딩은 엔터티 본문을 표현하고 전송하는 방식(그리고 아마 전송된 바이트 크기도)을 바꿀 것이기 때문이다.
+        그렇기 때문에 Content- Length 헤더보다 Transfer-Encoding 헤더를 먼저 검사해야 한다.
+
+    (c) 메시지가 Content- Length 헤더를 갖는지 확인해본다.
+    
+         메시지가 Content- Length 헤더를 갖는다면(그리고 메시지 유형이 엔터티 본문을 허용한다면)
+         Transfer-Encoding 헤더가 존재하지 않는 이상 Content-Length 값은 본문의 길이를 담게되기 때문에
+         이것으로 엔터티의 본문 길이를 판별할 수 있다.
+    
+    
+  
+<br>
+
+  
+3. HTTP/ 1.1 명세는 요청에 본문은 있지만 Content-Length 헤더는 없는 경우, 
+   메시지의 길이를 판별할 수 없다면 (1)____________ 응답을 보내고 
+   유효한 Content- Length를 요구하고 싶다면 (2)____________ 응답을 보내라고 조언하고 있다.
+   
+   `<보기>`<br> `400 Bad Request`, `404 Not Found`, `405 Method Not Allowd`,<br> `410 Content Required`, `411 Length Required`, `418 I'm a teapot`
+
+   > 정답 : (1) 400 Bad Request (2) 411 Length Required
 </div>
 </details>
 <br>
