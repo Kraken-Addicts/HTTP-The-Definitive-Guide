@@ -140,13 +140,13 @@
 <details>
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
 <div markdown="1">
+  
 1. HTTP는 TCP/IP와 같이 신뢰할 만한 전송 프로톨콜 위에서 구현되기 때문에 메세지 일부분에는 전송중에 변형되는 일이 없다. ( o / x)
-    - X 불완전한 트랜스코딩 프락시, 중개자 프락시를 비롯한 여러 이유로 메세지의 일부분이 전송 중에 변형되는 일이 일어난다.
+  - X 불완전한 트랜스코딩 프락시, 중개자 프락시를 비롯한 여러 이유로 메세지의 일부분이 전송 중에 변형되는 일이 일어난다.
 2. Content-MD5 헤더는 서버가 엔터티 본문에 MD5 알고리즘을 적용한 결과를 보내기 위해 사용된다. 중간에 있는 파릭사와 캐시는 그 헤더를 변경하거나 추가하지 않고 end-to-end 무결성을 검증하겠다는 목적을 가지고 사용된다. 메세지 무결성 검사를 할 수 있고 추가로 해시 테이블의 키로 사용하여 콘텐츠 중복 저장을 방지하는 목적으로도 사용할 수 있다. 이처럼 Content-MD5 헤더는 자주 전송된다. (o / x)
-    - X ('자주 전송되진 않는다'라고 책에 작성되어 있는데 Content-MD5는 현재 RFC 7231에 따라 사라졌다.)
-    - 또한 책에서 content-md5는 잘 사용하지 않고Want-digest란 기술이 책에 RFC3230으로 승인되었다고 나오지만 사실상 이것도 더이상 사용하지 않고 RFC7231의 "selected representation"란 키워드로 다시 명시되어 엔터티를 요약하고 있다. 자세한 내용은 RFC7231을 참고하자
-    - [https://www.rfc-editor.org/rfc/rfc7231.txt](https://www.rfc-editor.org/rfc/rfc7231.txt)
-
+  - X ('자주 전송되진 않는다'라고 책에 작성되어 있는데 Content-MD5는 현재 RFC 7231에 따라 사라졌다.)
+  - 또한 책에서 content-md5는 잘 사용하지 않고Want-digest란 기술이 책에 RFC3230으로 승인되었다고 나오지만 사실상 이것도 더이상 사용하지 않고 RFC7231의 "selected representation"란 키워드로 다시 명시되어 엔터티를 요약하고 있다. 자세한 내용은 RFC7231을 참고하자
+  - [https://www.rfc-editor.org/rfc/rfc7231.txt](https://www.rfc-editor.org/rfc/rfc7231.txt)
     ```
        The Content-MD5 header field has been removed because it was
        inconsistently implemented with respect to partial responses.
