@@ -134,16 +134,16 @@
 <br>
 
 ### __15.3__ 　  엔터티 요약　 `kukim`
-1. HTTP는 TCP/IP와 같이 신뢰할 만한 전송 프로톨콜 위에서 구현되기 때문에 메세지 일부분에는 전송중에 변형되는 일이 없다. ( o / x)
-2. Content-MD5 헤더는 서버가 엔터티 본문에 MD5 알고리즘을 적용한 결과를 보내기 위해 사용된다. 중간에 있는 파릭사와 캐시는 그 헤더를 변경하거나 추가하지 않고 end-to-end 무결성을 검증하겠다는 목적을 가지고 사용된다. 메세지 무결성 검사를 할 수 있고 추가로 해시 테이블의 키로 사용하여 콘텐츠 중복 저장을 방지하는 목적으로도 사용할 수 있다. 이처럼 Content-MD5 헤더는 자주 전송된다. (o / x)
+1. HTTP는 TCP/IP와 같이 신뢰할 만한 전송 프로톨콜 위에서 구현되기 때문에 메세지 일부분에는 전송중에 변형되는 일이 없다. (O / X)
+2. Content-MD5 헤더는 서버가 엔터티 본문에 MD5 알고리즘을 적용한 결과를 보내기 위해 사용된다. 중간에 있는 파릭사와 캐시는 그 헤더를 변경하거나 추가하지 않고 end-to-end 무결성을 검증하겠다는 목적을 가지고 사용된다. 메세지 무결성 검사를 할 수 있고 추가로 해시 테이블의 키로 사용하여 콘텐츠 중복 저장을 방지하는 목적으로도 사용할 수 있다. 이처럼 Content-MD5 헤더는 자주 전송된다. (O / X)
 
 <details>
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
 <div markdown="1">
   
-1. HTTP는 TCP/IP와 같이 신뢰할 만한 전송 프로톨콜 위에서 구현되기 때문에 메세지 일부분에는 전송중에 변형되는 일이 없다. ( o / x)
+1. HTTP는 TCP/IP와 같이 신뢰할 만한 전송 프로톨콜 위에서 구현되기 때문에 메세지 일부분에는 전송중에 변형되는 일이 없다. (O / X)
   - X 불완전한 트랜스코딩 프락시, 중개자 프락시를 비롯한 여러 이유로 메세지의 일부분이 전송 중에 변형되는 일이 일어난다.
-2. Content-MD5 헤더는 서버가 엔터티 본문에 MD5 알고리즘을 적용한 결과를 보내기 위해 사용된다. 중간에 있는 파릭사와 캐시는 그 헤더를 변경하거나 추가하지 않고 end-to-end 무결성을 검증하겠다는 목적을 가지고 사용된다. 메세지 무결성 검사를 할 수 있고 추가로 해시 테이블의 키로 사용하여 콘텐츠 중복 저장을 방지하는 목적으로도 사용할 수 있다. 이처럼 Content-MD5 헤더는 자주 전송된다. (o / x)
+2. Content-MD5 헤더는 서버가 엔터티 본문에 MD5 알고리즘을 적용한 결과를 보내기 위해 사용된다. 중간에 있는 파릭사와 캐시는 그 헤더를 변경하거나 추가하지 않고 end-to-end 무결성을 검증하겠다는 목적을 가지고 사용된다. 메세지 무결성 검사를 할 수 있고 추가로 해시 테이블의 키로 사용하여 콘텐츠 중복 저장을 방지하는 목적으로도 사용할 수 있다. 이처럼 Content-MD5 헤더는 자주 전송된다. (O / X)
   - X ('자주 전송되진 않는다'라고 책에 작성되어 있는데 Content-MD5는 현재 RFC 7231에 따라 사라졌다.)
   - 또한 책에서 content-md5는 잘 사용하지 않고Want-digest란 기술이 책에 RFC3230으로 승인되었다고 나오지만 사실상 이것도 더이상 사용하지 않고 RFC7231의 "selected representation"란 키워드로 다시 명시되어 엔터티를 요약하고 있다. 자세한 내용은 RFC7231을 참고하자
   - [https://www.rfc-editor.org/rfc/rfc7231.txt](https://www.rfc-editor.org/rfc/rfc7231.txt)
@@ -158,14 +158,68 @@
 <br>
 
 ### __15.4__ 　  미디어 타입과 차셋(Charset)　 `kukim`
-- 여기에
-- 문제를 작성해주세요
+1. Content-Type 헤더 필드는 엔터티 본문의 `(  )` 타입을 기술한다.
+2. 엔터티가 콘텐츠 인코딩을 거친 경우에는 이미 미디어 타입과 상관없이 어떤 방법으로 인코딩 했는지 명시한다면 Content-Type 헤더를 명시할 필요가 없다. (O / X)
+3. Content-Type 헤더는 내용 유형을 자세히 지정하기 위해 매개변수도 지원한다. ( O / X)
+4. HTTP는 본문 메시지 콘텐츠를 보낼 때 한 번에 하나의 데이터 폼만 전송 할 수 있다. (O / X)
+5. 다음 괄호를 채우시오
+```bash
+HTTP/1.0 206 Partial content
+Server: Microsoft-IIS/5 . 0
+Date: Sun, 10 Dec 2000 19:11:20 GMT
+Content-Location:
+Content-Type: multipart/x-byteranges; boundary=--[kukim]-- 
+Last-Modified: Sat, 09 Dec 2000 00:38:47 GMT
+--( )-- 
+Content-Type: text/plain 
+Content-Range: bytes 0-174/1441
+Fourscore and seven years ago our fathers brough forth on this continent a new nation, conceived in liberty and dedicated to the proposition that all men are created equal.
+--( )-- 
+Content-Type: text/plain 
+Content-Range: bytes 552-761/1441
+But in a larger sense , we can not dedicate , 씨e can not consec rate , we can not hallo씨 this ground. The brave men, living and dead who struggled here have consecrated it far above our poor po싸er to add or detract.
+--( )-- 
+Content-Type: text/plain 
+Content-Range: bytes 1344-1441/1441
+and that government of the people, by the people, for the people shall not perish from the earth.
+--( )--
+```
+
 <details>
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
 <div markdown="1">
   
-- 여기에
-- 해설을 작성해주세요
+1. Content-Type 헤더 필드는 엔터티 본문의 `(  )` 타입을 기술한다.
+  - MIME(Multipurpose Internet Mail Extensions)
+2. 엔터티가 콘텐츠 인코딩을 거친 경우에는 이미 미디어 타입과 상관없이 어떤 방법으로 인코딩 했는지 명시한다면 Content-Type 헤더를 명시할 필요가 없다. (O / X)
+  - X, Content-Type 헤더가 원본 엔터티 본문의 미디어 타입을 명시해야 한다.
+3. Content-Type 헤더는 내용 유형을 자세히 지정하기 위해 매개변수도 지원한다. ( O / X)
+  - O : Content-Type: text/html; charset=iso-8859- 4 처럼 인코딩 버전도 입력할 수 있다.
+4. HTTP는 본문 메시지 콘텐츠를 보낼 때 한 번에 하나의 데이터 폼만 전송 할 수 있다. (O / X)
+  - X : 멀티파트 미디어 타입을 통해 서로 붙어있는 여러 개의 메시지를 포함하여 보낼 수 있다.
+
+5. 다음 괄호를 채우시오
+```bash
+HTTP/1.0 206 Partial content
+Server: Microsoft-IIS/5 . 0
+Date: Sun, 10 Dec 2000 19:11:20 GMT
+Content-Location:
+Content-Type: multipart/x-byteranges; boundary=--[kukim]-- 
+Last-Modified: Sat, 09 Dec 2000 00:38:47 GMT
+--(kukim)-- 
+Content-Type: text/plain 
+Content-Range: bytes 0-174/1441
+Fourscore and seven years ago our fathers brough forth on this continent a new nation, conceived in liberty and dedicated to the proposition that all men are created equal.
+--(kukim)-- 
+Content-Type: text/plain 
+Content-Range: bytes 552-761/1441
+But in a larger sense , we can not dedicate , 씨e can not consec rate , we can not hallo씨 this ground. The brave men, living and dead who struggled here have consecrated it far above our poor po싸er to add or detract.
+--(kukim)-- 
+Content-Type: text/plain 
+Content-Range: bytes 1344-1441/1441
+and that government of the people, by the people, for the people shall not perish from the earth.
+--(kukim)-- 
+```
 
 </div>
 </details>
