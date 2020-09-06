@@ -1,14 +1,46 @@
 ## 15장 :octopus: 엔터티와 인코딩
+
 ### __15.1__ 　  메시지는 컨테이너, 엔터티는 화물　 `yeosong`
-- 여기에
-- 문제를 작성해주세요
+
+인턴인 `yeosong`은 www.joes-hardware.com 에서 오고 갔던 HTTP 메시지를 살펴보고 있다.
+
+각 문항에서 제시하는 정보를 확인하고 싶을 때, <보기>의 엔터티 관련 주요 헤더 중 어느 헤더를 찾아서 읽어야할까?
+
+||<보기>||
+|---|---|---|
+|`a. Content-Type`       | `e. Content-Location`    |      `i. Expires`         |
+|`b. Content-Length`     | `f. Content-Range`       |      `j. Allow`           |
+|`c. Content-Language`   | `g. Content-MD5`         |      `k. ETag`            |
+|`d. Content-Encoding`   | `h. Last-Modified`       |      `l. Cache-Control`   |
+
+1) 엔터티 본문의 콘텐츠에 대한 체크섬                            
+2) 전달되는 객체와 가장 잘 대응되는 자연어                         
+3) 서버에서 이 콘텐츠가 생성 혹은 수정된 날                         
+4) If-Match나 If-None-Match 요청을 받았을 때 인스턴스에 대한 검사기                    
+5) 이 리소스에 대해 허용되는 요청 메서드 (ex GET, HEAD..)          
+6) 이 데이터가 더 이상 신선하지 않은 것으로 간주되는 시점                  
+7) 엔터티에 의해 전달된 객체의 종류                               
+8) 이 문서를 캐시할 때 지킬 요청사항                
+
+
+#### __15.1.1__ 　  엔터티 본문
+
+다음 표를 참고하여 문장에 맞게 빈칸을 채우세요. 
+
+![216CE84C52694FF020](https://user-images.githubusercontent.com/53321189/92330070-158d2e00-f0a7-11ea-9159-58f210858004.png)
+
+엔터티 본문은 헤더 필드의 끝을 의미하는 `1)____` 바로 다음부터 시작한다. 
+`1)____`는 헥스덤프 상에서 `2)_____`로 표시된다. 이것 다음 글자부터가 엔터티 본문이다.
+
+
+
 <details>
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
 <div markdown="1">
   
 #### __15.1.1__ 　  메시지는 컨테이너, 엔터티는 화물
 
-인턴 `yeosong`은 www.joes-hardware.com 에서 오고 갔던 HTTP 메시지를 살펴보고 있다.
+인턴인 `yeosong`은 www.joes-hardware.com 에서 오고 갔던 HTTP 메시지를 살펴보고 있다.
 
 각 문항에서 제시하는 정보를 확인하고 싶을 때, <보기>의 엔터티 관련 주요 헤더 중 어느 헤더를 찾아서 읽어야할까?
 
@@ -25,20 +57,23 @@
 4) If-Match나 If-None-Match 요청을 받았을 때 인스턴스에 대한 검사기    `k. ETag`                           
 5) 이 리소스에 대해 허용되는 요청 메서드 (ex GET, HEAD..)             `j. Allow`  
 6) 이 데이터가 더 이상 신선하지 않은 것으로 간주되는 시점                 `i. Expires`   
-7)
+7) 엔터티에 의해 전달된 객체의 종류                                  `a. Content-Type`
 8) 이 문서를 캐시할 때 지킬 요청사항                                 `l. Cache-Control`
-9)
-10)
-11)
-12)
 
+#### __15.1.1__ 　  엔터티 본문
 
+다음 표를 참고하여 문장에 맞게 빈칸을 채우세요. 
 
+![216CE84C52694FF020](https://user-images.githubusercontent.com/53321189/92330070-158d2e00-f0a7-11ea-9159-58f210858004.png)
+
+엔터티 본문은 헤더 필드의 끝을 의미하는 `1)CRLF` 바로 다음부터 시작한다. 
+`1)CRLF`는 헥스덤프 상에서 `2)0d 0a`로 표시된다. 이것 다음 글자부터가 엔터티 본문이다.
+
+아스키 테이블에서 CR은 0x0d, LF는 0x0a 임을 확인할 수 있다.
 
 </div>
 </details>
 <br>
-
 ### __15.2__ 　  Content-Length: 엔터티의 길이　 `hylee`
 
 1. HTTP 스터디 이후 Content- Length 헤더에 대해 얘기하는데 큰일날 사람을 모두 골라주세요
