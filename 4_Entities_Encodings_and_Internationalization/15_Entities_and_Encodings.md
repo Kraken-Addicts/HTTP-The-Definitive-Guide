@@ -51,7 +51,6 @@
 |`d. Content-Encoding`   | `h. Last-Modified`       |      `l. Cache-Control`   |
 
 1) 엔터티 본문의 콘텐츠에 대한 체크섬                                `g. Content-MD5`
-  - MD5는 보안용으로는 약해서 지금은 쓰이지 않지만, 체크섬 용도로는 지금도 쓰이고 있다고 합니다.
 2) 전달되는 객체와 가장 잘 대응되는 자연어                            `c. Content-Language` 
 3) 서버에서 이 콘텐츠가 생성 혹은 수정된 날                           `h. Last-Modified`    
 4) If-Match나 If-None-Match 요청을 받았을 때 인스턴스에 대한 검사기    `k. ETag`                           
