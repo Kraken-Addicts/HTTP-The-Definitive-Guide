@@ -428,9 +428,6 @@ and that government of the people, by the people, for the people shall not peris
 
  
 
-3. 델타 생성기는 `______` 헤더에 지정된 알고리즘를 이용하여 기저 문서와 최신 인스턴스 사이의 델타를 계산한다. 
-
-   
 
 4. 델타 인코딩을 구현하기 어려운 이유는? (최소 25자)
 
