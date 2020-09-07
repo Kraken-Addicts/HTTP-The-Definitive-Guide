@@ -291,7 +291,7 @@ and that government of the people, by the people, for the people shall not peris
   3-1. 위의 Content-Type헤더는 생략이 가능하다. (X)<br>
   => Content-Type헤더는 디코딩된 엔터티를 보여주기 위해 필요한 정보이므로 메시지에 존재할 수 있고 또 그래야 한다.
   
-  3-2. 위의 Content_Length값인 7023은 `디코딩된 본문`의 길이이다.<br>
+  3-2. 위의 Content_Length값인 7023은 `인코딩된 본문`의 길이이다.<br>
   
   3-3. 위의 Content_Encoding의 'gzip'은 엔터티에 GNU zip 인코딩이 적용되었음을 의미한다. 일반적으로 가장 효율적이고 널리 쓰이는 압축 알고리즘이다. (O)<br>
   
