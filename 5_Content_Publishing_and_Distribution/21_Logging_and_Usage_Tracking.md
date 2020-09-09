@@ -67,14 +67,16 @@
 <br>
 
 ### __21.4__ 　  개인 정보 보호에 대해 `kukim`
-1. 클라이언트(사용자)들은 서버에 접속할 때 자신의 정보가 저장되고 있다는 사실을 완벽하게 인지하지 못하기 때문에 서버는 이를 반드시 공지해야 한다. (O / X / △)
+1. 클라이언트(사용자)들은 서버에 접속할 때 자신의 정보가 저장되고 있다는 사실을 완벽하게 인지하지 못하기 때문에 서버는 반드시 공지해야 한다.(ex) 쿠키 수집 동의) (O / X / △)
 
 <details>
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
 <div markdown="1">
   
-1. 클라이언트(사용자)들은 서버에 접속할 때 자신의 정보가 저장되고 있다는 사실을 완벽하게 인지하지 못하기 때문에 서버는 이를 공지해야 한다. (O / X / △)
-    - 정답 : O
+1. 클라이언트(사용자)들은 서버에 접속할 때 자신의 정보가 저장되고 있다는 사실을 완벽하게 인지하지 못하기 때문에 서버는 반드시 공지해야 한다.(ex) 쿠키 수집 동의) (O / X / △)
+    - 정답 : △
+    - 나라마다 법률에 관한 범위는 다르다.
+    - 나라별 쿠키에 관한 법률 차이 : https://www.kisa.or.kr/jsp/common/downloadAction.jsp?bno=158&dno=203&fseq=1
     - EU GDPR의 쿠키 수집에 대한 동의 약관
     - [https://gdpr.eu/cookies/](https://gdpr.eu/cookies/)
     - [https://ec.europa.eu/ipg/basics/legal/cookies/index_en.htm](https://ec.europa.eu/ipg/basics/legal/cookies/index_en.htm)
