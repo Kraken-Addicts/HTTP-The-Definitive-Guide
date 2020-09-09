@@ -26,7 +26,7 @@
   |  |  [__14장__](./3_Identification_Authorization_and_Security/14_Secure_HTTP.md) 보안 HTTP | 09/03 (목) | 🌱 |
   |||||
   | [__4부 엔터티, 인코딩, 국제화__](https://github.com/Kraken-Addicts/HTTP-The-Definitive-Guide/tree/master/4_Entities_Encodings_and_Internationalization) | 　 | 　 | 　 |
-  |  |  [__15장__](./4_Entities_Encodings_and_Internationalization/15_Entities_and_Encodings.md) 엔터티와 인코딩 | 09/07 (월) | 　 |
+  |  |  [__15장__](./4_Entities_Encodings_and_Internationalization/15_Entities_and_Encodings.md) 엔터티와 인코딩 | 09/07 (월) | 🌱 |
   |  |  [__16장__](./4_Entities_Encodings_and_Internationalization/16_Internationalization.md) 국제화 | 09/10 (목) | 　 |
   |  |  [__17장__](./4_Entities_Encodings_and_Internationalization/17_Content_Negotiation_and_Transcoding.md) 내용 협상과 트랜스코딩 | 09/14 (월) | 　 |
   |||||
