@@ -282,6 +282,7 @@ e. ISO와 같은 다른 표준 단체에서도 사용된다.
 **b : ISO-8859-1**
 
 **c : EUC-KR**
+
 출처: https://w3techs.com/technologies/overview/character_encoding
 
 #### 2. 고정폭 인코딩은 코딩된 문자를 고정된 길이의 비트로 표현한다 (O)
