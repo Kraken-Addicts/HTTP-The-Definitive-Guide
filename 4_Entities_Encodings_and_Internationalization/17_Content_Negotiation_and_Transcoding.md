@@ -172,9 +172,8 @@
 <br>
 
 - __XHTML(Extensible Hypertext Markup Language)__
-    - XHTML은 HTML의 후속으로 많은 사람들이 XHTML을 HTML의 "최신 버전"으로 보고 있다. 하지만 HTML과 XHTML은 별개의 분리된 표준이다. [(더보기, 위키)](https://ko.wikipedia.org/wiki/XHTML)
-    <br>
-        ![image](https://user-images.githubusercontent.com/60066472/92931538-902ac480-f47e-11ea-999d-e1f58123d69f.png)
+    - XHTML은 HTML의 후속으로 많은 사람들이 XHTML을 HTML의 "최신 버전"으로 보고 있다. 하지만 HTML과 XHTML은 별개의 분리된 표준이다. [(더보기, 위키)](https://ko.wikipedia.org/wiki/XHTML)<br><br>
+    ![image](https://user-images.githubusercontent.com/60066472/92931538-902ac480-f47e-11ea-999d-e1f58123d69f.png)
 <br>
 
 <details>
