@@ -15,7 +15,7 @@
     7. 웹 서버가 협상을 할 필요가 없다. 클라리언트 주도 협상보다 빠르다.
     8. 만약 결정이 뻔하지 않으면 (헤더에 맞는 거싱 없으면), 서버는 추측을 해야만 한다.
     ```
-    ![https://user-images.githubusercontent.com/57086195/92450684-b0e0e900-f1f6-11ea-88aa-168809972003.png](https://user-images.githubusercontent.com/57086195/92450684-b0e0e900-f1f6-11ea-88aa-168809972003.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/57086195/92450684-b0e0e900-f1f6-11ea-88aa-168809972003.png" width="700"></p>
   
 <details>
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
@@ -38,7 +38,7 @@
     7. 웹 서버가 협상을 할 필요가 없다. 클라리언트 주도 협상보다 빠르다.
     8. 만약 결정이 뻔하지 않으면 (헤더에 맞는 거싱 없으면), 서버는 추측을 해야만 한다.
     ```
-    ![https://user-images.githubusercontent.com/57086195/92450684-b0e0e900-f1f6-11ea-88aa-168809972003.png](https://user-images.githubusercontent.com/57086195/92450684-b0e0e900-f1f6-11ea-88aa-168809972003.png)
+    <p align="center"><img src="https://user-images.githubusercontent.com/57086195/92450684-b0e0e900-f1f6-11ea-88aa-168809972003.png" width="700"></p>
   - 정답 :  (a - 3), (b - 1), (c - 2), (d - 8), (e - 5), (f - 7)
 
 </div>
@@ -141,30 +141,50 @@
 <br>
 
 ### __17.5__ 　  트랜스코딩 `mihykim`
-- 여기에
-- 문제를 작성해주세요
+#### (학습목표) 트랜스코딩 vs 인코딩 구분하기
+- 각 문제의 설명을 읽고, 보기에서 가장 연관이 깊은 항목을 골라주세요! (택1)
+    | 보기 |
+    |:---|
+    | - 트랜스코딩(Transcoding) <br> - 전송 인코딩(Chunked Transfer Encoding) <br> - 콘텐츠 인코딩(Content-Encoding)|
+    - __[문제1]__ 서버 태혁이는 효과적인 전송을 위해 메세지 본문(만)을 압축하였다.
+        - 발신 메세지의 헤더 `Content-Encoding:gzip`
+    - __[문제2]__ 마스터 도비는 1년 전 자신이 현재의 자신에게 보낸 HTTP 메세지를 받았다.
+        - 인코딩된 메세지의 끝 `길이가 0인 종료청크`
+        - 디코딩된 메세지 본문 `HTTP 스터디 다음 시간이 마지막인데, 그런 의미에서 협곡 가실 분?`
+    - __[문제3]__ 아기 대현이는 20년 전, 아버지의 흑백 폰을 빌려, 데스크톱 클라이언트를 위해 만들어진 주니버 꾸러기에 접속하였다.
+        - 모바일 단말기에 띄워진 화면 `WML 문서, 저해상도 이미지, 흑백 이미지, 단순한 텍스트 페이지`
+
+#### (학습목표) 트랜스코딩 3종류 구분하기
+- 각 문제의 설명을 읽고, 보기에서 가장 연관이 깊은 항목을 골라주세요! (택1)
+    | 보기 |
+    |:---|
+    | - 포맷변환(format conversion) <br> - 정보합성(information synthesis) <br> - 콘텐츠주입(content injection) |
+    - __[문제4]__ 잘나가는 현준이는 여자친구와 함께 홍대맛집을 검색하던 중, 난감하게도 몰래 들어갔던 웹사이트와 관련된 광고가 자동으로 생성되어 브라우저에 표시되었다.
+    - __[문제5]__ 영어신 정아는 녹음해둔 42야우리두 스터디 자료가 사용하는 음악플레이어에서 열리지 않자, 녹음파일을 mp4로 변환해서 문제를 해결하였다.
+    - __[문제6]__ 웹개발 중 궁금한 점이 생긴 준서는 리액트 공식홈페이지에 들어갔는데, 각 절의 제목에 기반해 문서의 개요가 생성되어 있어 찾으려한 내용을 금방 찾을 수 있었다.
+
+    
+#### :cookie: 책에 나오는 WML이 뭔가요?
+- __WML(Wireless Markup Language)__
+    - XML에 기반을 둔 무선인터넷용 언어로써, 기존의 HTML을 개선한 무선 소형 단말을 위해 설계된 마크업 언어
+    ![image](https://user-images.githubusercontent.com/60066472/92931438-6bcee800-f47e-11ea-8124-68ec198381d9.png)
+<br>
+
+- __XHTML(Extensible Hypertext Markup Language)__
+    - XHTML은 HTML의 후속으로 많은 사람들이 XHTML을 HTML의 "최신 버전"으로 보고 있다. 하지만 HTML과 XHTML은 별개의 분리된 표준이다. [(더보기, 위키)](https://ko.wikipedia.org/wiki/XHTML)
+        ![image](https://user-images.githubusercontent.com/60066472/92931538-902ac480-f47e-11ea-999d-e1f58123d69f.png)
+
 <details>
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
 <div markdown="1">
   
-- 여기에
-- 해설을 작성해주세요
-
+#### (학습목표) 트랜스코딩 vs 인코딩 구분하기
+- 문제1 : 콘텐츠 인코딩(Content-Encoding)
+- 문제2 : 전송 인코딩(Chunked Transfer Encoding)
+- 문제3 : 트랜스코딩(Transcoding)
+- 문제4 : 콘텐츠주입(content injection)
+- 문제5 : 포맷변환(format conversion)
+- 문제6 : 정보합성(information synthesis)
 </div>
 </details>
 <br>
-
-### __17.6__ 　  다음 단계　 `mihykim`
-- 여기에
-- 문제를 작성해주세요
-<details>
-<summary> <b> :page_facing_up: 답지 </b>  </summary>
-<div markdown="1">
-  
-- 여기에
-- 해설을 작성해주세요
-
-</div>
-</details>
-<br>
-
