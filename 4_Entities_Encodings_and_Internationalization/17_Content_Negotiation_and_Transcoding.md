@@ -127,14 +127,55 @@
 <br>
 
 ### __17.4__ 　  투명 협상 `junslee`
-- 여기에
-- 문제를 작성해주세요
+
+1. 프랑스어 사용자인 '도비'가 서버에 아래와 같은 요청을 보냈을 때, 도비가 보고있는 문서의 언어는 무엇이며, 캐시된 콘텐츠 파일의 언어는 무엇일까요.
+
+    ```bash
+        GET / HTTP/1.1
+        Host: www.yebalja.com
+        User-agent: Mozila/4.73  
+        Accept-language: fr;q=1.0 
+    ```
+
+2. 잠시 후... 영어 문서도 보고 싶어진 '도비'로부터 캐시가 아래와 같은 요청을 받았을 때, 이때 캐시의 올바른 행동을 서술하시오. `주관식`
+ 
+    ```bash
+        GET / HTTP/1.1
+        Host: www.yebalja.com
+        User-agent: Mozila/4.73
+        Accept-language: en;q=1.0 
+    ```
+
+3. 위 과정을 거치고 나서 캐시는 같은 URL에 대해 두개의 다른 문서(프랑스어, 영어)를 갖게 되었는데, 이 다른 버전들은 variant(배리언트)라고 불린다. (O / X)
+
+4. 내용 협상은 배리언트 중에서 클라이언트의 요청에 가장 잘 맞는 것을 선택하는 과정이라고 할 수 있다. (O / X)
+
+5. 다음 날... 서버는(javascript ES5, ES6 두 버전의 문서를 모두 가지고있다.) 클라이언트로 부터 아래와 같은 요청을 받았다고 한다.. 옳은 내용을 모두 고르세요.
+
+    ```bash
+        GET /tutorial/docs HTTP/1.1
+        Host: www.codingEveryone.com
+        User-agent: Mozila/old-version (do not support javascript)
+        Accept-language: en;q=1.0 
+    ```
+    
+    (a) 웹서버는 응답에 `Vary: User-agent` 라고 정의된 응답 헤더를 포함시킨다.<br><br>
+    (b) 캐시는 반드시 캐시된 배리언트(variant)와 함께 클라이언트 요청 헤더와 그에 알맞은 서버 응답 헤더 양쪽 모두를 저장해야 한다.<br><br>
+    (c) 사용자가 읽고 있는 페이지는 자바스크립트가 포함되지 않은 페이지이다.<br>
+    
 <details>
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
 <div markdown="1">
   
-- 여기에
-- 해설을 작성해주세요
+1. Accept-language 헤더부분을 보면 알 수있듯이 도비는 `프랑스어`로 된 문서를 보고있을 것이다. 캐시된 콘텐츠 파일 또한 `프랑스어`이다.
+
+2. 캐시는 반드시 두번째 요청도 서버에게 그대로 전달해야 한다. 그 URL에대한 이번의 응답과 지난번의 모든 응답을 저장해야 한다.
+
+3. 위 과정을 거치고 나서 캐시는 같은 URL에 대해 두개의 다른 문서를 갖게 되었는데, 이 다른 버전들은 variant(배리언트)라고 불린다. (O)
+
+4. 내용 협상은 배리언트 중에서 클라이언트의 요청에 가장 잘 맞는 것을 선택하는 과정이라고 할 수 있다. (O)
+
+5. 정답은 a, b, c 모두 옳은 내용이다!
 
 </div>
 </details>
