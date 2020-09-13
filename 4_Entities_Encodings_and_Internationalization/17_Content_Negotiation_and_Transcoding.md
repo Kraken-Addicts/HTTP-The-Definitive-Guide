@@ -150,18 +150,22 @@
 
 4. 내용 협상은 배리언트 중에서 클라이언트의 요청에 가장 잘 맞는 것을 선택하는 과정이라고 할 수 있다. (O / X)
 
-5. 다음 날... 서버는(javascript ES5, ES6 두 버전의 문서를 모두 가지고있다.) 클라이언트로 부터 아래와 같은 요청을 받았다고 한다.. 옳은 내용을 모두 고르세요.
+5. 서버는 클라이언트로부터 아래와 같은 요청들을 받았다고 한다.. 옳은 내용을 모두 고르세요.
 
     ```bash
         GET /tutorial/docs HTTP/1.1
         Host: www.codingEveryone.com
-        User-agent: Mozila/old-version (do not support javascript)
+        User-agent: pc
+        Accept-language: en;q=1.0 
+    
+        GET /tutorial/docs HTTP/1.1
+        Host: www.codingEveryone.com
+        User-agent: mobile device 
         Accept-language: en;q=1.0 
     ```
     
-    (a) 웹서버는 응답에 `Vary: User-agent` 라고 정의된 응답 헤더를 포함시킨다.<br><br>
-    (b) 캐시는 반드시 캐시된 배리언트(variant)와 함께 클라이언트 요청 헤더와 그에 알맞은 서버 응답 헤더 양쪽 모두를 저장해야 한다.<br><br>
-    (c) 사용자가 읽고 있는 페이지는 자바스크립트가 포함되지 않은 페이지이다.<br>
+    (a) 캐시는 반드시 캐시된 배리언트(variant)와 함께 클라이언트 요청 헤더와 그에 알맞은 서버 응답 헤더 양쪽 모두를 저장해야 한다.<br><br>
+    (b) 서버는 응답에 `Vary: User-agent` 라고 정의된 응답 헤더를 포함시켰고, 모바일 유저에게 데스크탑 유저를 위한 캐시 컨텐츠가 제공 되는것을 피할 수 있었다.<br>
     
 <details>
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
@@ -175,7 +179,7 @@
 
 4. 내용 협상은 배리언트 중에서 클라이언트의 요청에 가장 잘 맞는 것을 선택하는 과정이라고 할 수 있다. (O)
 
-5. 정답은 a, b, c 모두 옳은 내용이다!
+5. 정답은 a, b 모두 옳은 내용이다!
 
 </div>
 </details>
