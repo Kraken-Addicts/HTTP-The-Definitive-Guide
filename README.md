@@ -1,5 +1,5 @@
 # :octopus:HTTP 완벽 가이드
-- __시간:__ 매주 화목 오전 10시 _(7/21~)_ -> 매주 월수 오전 10시    
+- __시간:__ 매주 화목 오전 10시 _(7/21~)_ -> 매주 월수 오전 10시 (~9/17)  
 - __장소:__ 1층 경복궁 -> 편한 곳에서 온라인 미팅    
 - __순서:__ ①mihykim ②daelee ③secho ④jehong ⑤taelee ⑥yeosong ⑦hylee ⑧yeha ⑨kukim ⑩junslee
 - __객원:__ doby
