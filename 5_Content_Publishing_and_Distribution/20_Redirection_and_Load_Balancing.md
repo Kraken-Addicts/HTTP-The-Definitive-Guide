@@ -242,11 +242,11 @@ naver.com이 라운드 로빈 주소 순환을 사용한다고 했을 때 1번�
 
 ![20-3-1](https://user-images.githubusercontent.com/53321189/93372998-af1ac380-f88f-11ea-93e6-db4bd1c80b26.png)
 
-a. NE에게 하나 이상의 예외를 그의 목록에서 삭제하라고 요청한다.  `NECP_EXCEPTION_DEL`   
-b. NECP_INIT_ACK NECP_INIT을 받았음을 알린다. `NECP_INIT_ACK`
-c. 피어가 살아있는지 물어본다. `NECP_KEEPALIVE`
-d. NE 전체의 예외 목록을 문의한다. `NECP_EXCEPTION_QUERY`
-e. SE는 NE에게 "트래픽을 나에게 보내는 것을 중단하라"라고 말한다. `NECP_STOP`
+a. NE에게 하나 이상의 예외를 그의 목록에서 삭제하라고 요청한다. <br>
+b. NECP_INIT_ACK NECP_INIT을 받았음을 알린다.  <br>
+c. 피어가 살아있는지 물어본다. <br>
+d. NE 전체의 예외 목록을 문의한다. <br>
+e. SE는 NE에게 "트래픽을 나에게 보내는 것을 중단하라"라고 말한다.  <br>
 
 <details>
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
@@ -276,11 +276,11 @@ e. SE는 NE에게 "트래픽을 나에게 보내는 것을 중단하라"라고 �
 
 ![20-3](https://user-images.githubusercontent.com/53321189/93371884-0455d580-f88e-11ea-9121-4b6872673ce1.png)
 
-a. NE에게 하나 이상의 예외를 그의 목록에서 삭제하라고 요청한다.  `NECP_EXCEPTION_DEL`   
-b. NECP_INIT_ACK NECP_INIT을 받았음을 알린다. `NECP_INIT_ACK`
-c. 피어가 살아있는지 물어본다. `NECP_KEEPALIVE`
-d. NE 전체의 예외 목록을 문의한다. `NECP_EXCEPTION_QUERY`
-e. SE는 NE에게 "트래픽을 나에게 보내는 것을 중단하라"라고 말한다. `NECP_STOP`
+a. NE에게 하나 이상의 예외를 그의 목록에서 삭제하라고 요청한다.  `NECP_EXCEPTION_DEL`    <br>
+b. NECP_INIT_ACK NECP_INIT을 받았음을 알린다. `NECP_INIT_ACK`  <br>
+c. 피어가 살아있는지 물어본다. `NECP_KEEPALIVE`  <br>
+d. NE 전체의 예외 목록을 문의한다. `NECP_EXCEPTION_QUERY`  <br>
+e. SE는 NE에게 "트래픽을 나에게 보내는 것을 중단하라"라고 말한다. `NECP_STOP`  <br>
 
 
 </div>
