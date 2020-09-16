@@ -53,8 +53,6 @@
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
 <div markdown="1">
   
-- 여기에
-- 해설을 작성해주세요
 
 1. 가상 호스팅을 제공하는 업체는 PC 한 대에 수십, 수백 개의 웹사이트를 호스팅한다. **(O / X)**
 
