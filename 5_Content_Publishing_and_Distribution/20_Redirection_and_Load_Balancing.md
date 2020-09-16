@@ -99,6 +99,7 @@
 > 4번 100% 지어낸 이야기다.
 > https://www.wikiwand.com/en/Round-robin_(document)
 > 위 링크에 들어가면 Round Robin방식으로 싸인된 문건을 볼 수 있다.
+> 불어로 'rond rouban'라고 하는데 circle of ribbon이라는 뜻이다. 
 
 </div>
 </details>
