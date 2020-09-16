@@ -1,27 +1,44 @@
 ## 21장 :octopus: 로깅과 사용추적
 ### __21.1__ 　  로그란 무엇인가?　 `hylee`
-- 여기에
-- 문제를 작성해주세요
+1. 대체로 우리가 로깅을 하는 이유 2가지는 뭘까요? (서술형)
 <details>
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
 <div markdown="1">
   
-- 여기에
-- 해설을 작성해주세요
+> 정답: 1. 서버나 프락시의 문제를 찾기 위해서 2.접근 통계를 내려고
 
 </div>
 </details>
 <br>
 
 ### __21.2__ 　  로그 포맷 (일반로그포맷 21.2.1만!)　 `hylee`
-- 여기에
-- 문제를 작성해주세요
+1. 요즘 사용하는 가장 일반적인 포맷의 이름은 무엇일까요??
+- 보기 : `(a) 일반 로그 포맷(Common Log Format)`, `(b) 기본 로그 포맷(Basic Log Format)`, <br>`(c) 커몬 로그 포맷(Comeon Log Fromat)`, `(d) 표준 로그 포맷(Standard Log Format)`
+
+
+2.다음 로그 포맷을 분석해서 아래에 해당하는 필드에 맞는 엔트리 (1)~(5)에 들어갈 순서는 무엇일까요?
+> `https://www.yebalja.com/ - hylee [17/Sep/ :10:55:32 +0900] "GET /foo HTTP/1. 0" 200 0`
+- 보기 : `(a)-` `(b)hylee`  `(c)"GET /foo HTTP/1.0"` `(d)200` `(e)0`
+
+![image](https://user-images.githubusercontent.com/44167177/93292152-d2a62580-f81f-11ea-8657-203c929f3833.png)
+
+
+
+
 <details>
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
 <div markdown="1">
   
-- 여기에
-- 해설을 작성해주세요
+1. 요즘 사용하는 가장 일반적인 포맷의 이름은 무엇일까요??
+  - 보기 : `일반 로그 포맷(Common Log Format)`
+  
+2.다음 로그 포맷을 분석해서 아래에 해당하는 필드에 맞는 엔트리 (1)~(5)에 들어갈 순서는 무엇일까요?
+> `https://www.yebalja.com/ - hylee [17/Sep/ :10:55:32 +0900] "GET /foo HTTP/1. 0" 200 0`
+- 보기 : `(a)-` `(b)hylee`  `(c)"GET /foo HTTP/1.0"` `(d)200` `(e)0`
+> 정답 : (b) - (a) - (d) - (c) - (e)
+
+![image](https://user-images.githubusercontent.com/44167177/93292634-f322af80-f820-11ea-9349-dd525f1e7481.png)
+
 
 </div>
 </details>
