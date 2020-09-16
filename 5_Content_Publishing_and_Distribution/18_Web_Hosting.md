@@ -99,15 +99,17 @@
    > 1. HTTP 요청 메시지에 전체 URL(스킴과 호스트 컴포넌트)이 기술되어 있으면, Host 헤더에 있는 값은 무시하고 URL을 사용한다.
    > 2. HTTP 요청 메시지에 있는 URL에 호스트 명이 기술되어 있지 않고 요청에 Host 헤더가 있으면, 호스트 명과 Host 헤더에서 가져온다.
    > 3. 1, 2단계에서 호스트를 결정할 수 없으면 클라이언트에 400 Bad Request응답을 반환한다.
-<br>
+
 
 
 
 
 
 ### __18.3__ 　  안정적인 웹 사이트 만들기　 `secho`
+
 - 여기에
 - 문제를 작성해주세요
+
 <details>
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
 <div markdown="1">
@@ -122,6 +124,7 @@
 ### __18.4__ 　  웹 사이트 빠르게 만들기　 `secho`
 - 여기에
 - 문제를 작성해주세요
+
 <details>
 <summary> <b> :page_facing_up: 답지 </b>  </summary>
 <div markdown="1">
