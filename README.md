@@ -31,9 +31,9 @@
   |  |  [__17장__](./4_Entities_Encodings_and_Internationalization/17_Content_Negotiation_and_Transcoding.md) 내용 협상과 트랜스코딩 | 09/14 (월) | 🌱 |
   |||||
   | [__5부 콘텐츠 발행 및 배포__](https://github.com/Kraken-Addicts/HTTP-The-Definitive-Guide/tree/master/5_Content_Publishing_and_Distribution) | 　 | 　 | 　 |
-  |  |  [__18장__](./5_Content_Publishing_and_Distribution/18_Web_Hosting.md) 웹 호스팅 | 09/17 (목) | 　 |
-  |  |  [__20장__](./5_Content_Publishing_and_Distribution/20_Redirection_and_Load_Balancing.md) 리다이렉션과 부하 균형 | 09/17 (목) | 　 |
-  |  |  [__21장__](./5_Content_Publishing_and_Distribution/21_Logging_and_Usage_Tracking.md) 로깅과 사용 추적 | 09/17 (목) | 　 |
+  |  |  [__18장__](./5_Content_Publishing_and_Distribution/18_Web_Hosting.md) 웹 호스팅 | 09/17 (목) | 🌱 |
+  |  |  [__20장__](./5_Content_Publishing_and_Distribution/20_Redirection_and_Load_Balancing.md) 리다이렉션과 부하 균형 | 09/17 (목) | 🌱 |
+  |  |  [__21장__](./5_Content_Publishing_and_Distribution/21_Logging_and_Usage_Tracking.md) 로깅과 사용 추적 | 09/17 (목) | 🌱 |
 
 <br>
 
