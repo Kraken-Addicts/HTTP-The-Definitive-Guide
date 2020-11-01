@@ -39,3 +39,20 @@
 
 >저 : 데이빗 고울리, 브라이언 토티, 마조리 세이어, 세일루 레디, 안슈 아가왈 <br>
 >역 : 이응준, 정상일
+
+
+
+<br>
+
+# Interview Question in HTPP || Web || Internet
+해당 repo의 [Issues](https://github.com/Kraken-Addicts/HTTP-The-Definitive-Guide/issues)에 있습니다. 
+
+- Q1) GET vs POST
+- Q2) TCP vs UDP
+- Q3) HTTP vs HTTPS
+- Q4) TCP/IP Layers
+- Q5) Cookie, Session
+- Q6) HTTP Request / Response
+- Q7) CORS
+- Q8) Browser Rendering
+- Q9) Spring Framework / 5G
