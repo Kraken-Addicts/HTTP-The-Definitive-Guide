@@ -44,7 +44,7 @@
 
 <br>
 
-# Interview Question in HTPP || Web || Internet
+# Interview Question in HTTP || Web || Internet
 해당 repo의 [Issues](https://github.com/Kraken-Addicts/HTTP-The-Definitive-Guide/issues)에 있습니다. 
 
 - Q1) GET vs POST
